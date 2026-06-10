@@ -1,0 +1,35 @@
+﻿species,in_d06,in_d03_table_s1,match_status
+Aphelodoris varia,True,True,matched
+Ardeadoris egretta,False,True,only_in_d03
+Ardeadoris rubroannulata,False,True,only_in_d03
+Ceratosoma brevicaudatum,False,True,only_in_d03
+Ceratosoma trilobatum,False,True,only_in_d03
+Chromodoris elisabethina,True,True,matched
+Chromodoris kuiteri,True,True,matched
+Chromodoris lochi,True,False,only_in_d06
+Dendrodoris krusensterni,True,False,only_in_d06
+Dendrodoris krusensternii (=denisoni),False,True,only_in_d03
+Dendrodoris nigra,False,True,only_in_d03
+Dendrodoris tuberculosa,False,True,only_in_d03
+Discodoris sp,True,False,only_in_d06
+Doriprismatica atromarginata,True,True,matched
+Glossodoris hikuerensis,False,True,only_in_d03
+Glossodoris vespa,True,False,only_in_d06
+Goniobranchus collingwoodi,False,True,only_in_d03
+Goniobranchus daphne,False,True,only_in_d03
+Goniobranchus splendidus,False,True,only_in_d03
+Goniobranchus tasmaniensis,False,True,only_in_d03
+Goniobranchus tinctorius,False,True,only_in_d03
+Halgerda aurantiomaculata,False,True,only_in_d03
+Hypselodoris bennetti,True,True,matched
+Hypselodoris obscura,False,True,only_in_d03
+Hypselodoris tryoni,False,True,only_in_d03
+Mexichromis festiva,False,True,only_in_d03
+Notodoris (=Aegires) gardineri,False,True,only_in_d03
+Phyllidia coelestis,False,True,only_in_d03
+Phyllidia elegans,False,True,only_in_d03
+Phyllidia ocellata,True,True,matched
+Phyllidia varicosa,True,True,matched
+Phyllidiella pustulosa,True,True,matched
+Phyllidiopsis shireenae,False,True,only_in_d03
+Sebadoris fragilis,False,True,only_in_d03

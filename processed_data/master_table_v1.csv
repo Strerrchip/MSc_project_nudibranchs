@@ -1,0 +1,91 @@
+﻿species,family,prey_group,chemical_acquisition,colour_pattern,source_dataset,data_level
+Actinocyclus verrucosus,Actinocyclidae,Porifera <sup>1</sup>,–,Mottled,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Hallaxa translucens,Actinocyclidae,Porifera & Chordata<sup>2-4</sup>,–,Uniform,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Aegires flores,Aegiridae,"Porifera<sup>2,3,5-8</sup>",Sequestration <sup>9</sup>,Stripes/spots & distinct rim,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Notodoris minor,Aegiridae,"Porifera <sup>10,11</sup>","Sequestration <sup>12,13</sup>",Stripes/spots,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Akiodoris lutescens,Akiodorididae,Bryozoa <sup>14</sup>,–,Uniform,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Armodoris anudeorum,Akiodorididae,–,–,Uniform,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Cadlinella ornatissima,Cadlinellidae,Porifera <sup>2</sup>,"Sequestration* <sup>15</sup><break xmlns:mml=""http://www.w3.org/1998/Math/MathML"" xmlns:xlink=""http://www.w3.org/1999/xlink""></break>(presence of MDFs)",Stripes/spots,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Aldisa sanguinea,Cadlinidae,Porifera <sup>10</sup>,Sequestration <sup>10</sup>,Uniform,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Cadlina laevis,Cadlinidae,"Porifera <sup>8, 10, 16-18</sup>","Sequestration <sup>10, 19</sup> & synthesis <sup>10</sup>",Stripes/spots & distinct rim,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Inuda luarna,Cadlinidae,Porifera* (confamilial trait),"Sequestration* <sup>20</sup><break xmlns:mml=""http://www.w3.org/1998/Math/MathML"" xmlns:xlink=""http://www.w3.org/1999/xlink""></break>(presence of MDFs)",Uniform,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Calycidoris guentheri,Calycidorididae,"Bryozoa*<break xmlns:mml=""http://www.w3.org/1998/Math/MathML"" xmlns:xlink=""http://www.w3.org/1999/xlink""></break>(confamilial trait)","Synthesis*<break xmlns:mml=""http://www.w3.org/1998/Math/MathML"" xmlns:xlink=""http://www.w3.org/1999/xlink""></break>(absence of mantle glands; confamilial trait)",–,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Diaphorodoris lirulatocauda,Calycidorididae,"Bryozoa <sup>2, 8, 21</sup>",Synthesis <sup>22</sup>,Stripes/spots & distinct rim,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Ardeadoris scottjohnsoni,Chromodorididae,Porifera <sup>23</sup>,Sequestration <sup>24</sup>,Stripes/spots & distinct rim,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Ceratosoma brevicaudatum,Chromodorididae,"Porifera <sup>25, 26</sup>","Sequestration <sup>25, 26</sup>",Stripes/spots & distinct rim,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Chromodoris magnifica,Chromodorididae,"Porifera <sup>27, 28</sup>",Sequestration <sup>28</sup>,Stripes/spots & distinct rim,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Chromolaichma edmundsi,Chromodorididae,Porifera <sup>29</sup>,Sequestration <sup>30</sup>,Distinct rim,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Diversidoris aurantinodulosa,Chromodorididae,Porifera <sup>5</sup>,"Sequestration*<break xmlns:mml=""http://www.w3.org/1998/Math/MathML"" xmlns:xlink=""http://www.w3.org/1999/xlink""></break>(confamilial trait)",Stripes/spots & distinct rim,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Doriprismatica stellata,Chromodorididae,Porifera <sup>31</sup>,Sequestration <sup>31</sup>,Mottled & distinct rim,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Felimare tema,Chromodorididae,Porifera <sup>32</sup>,"Sequestration <sup>10, 33</sup>",Stripes/spots & distinct rim,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Glossodoris buko,Chromodorididae,Porifera <sup>25</sup>,"Sequestration <sup>25, 29</sup>","Stripes/spots, mottled & distinct rim",Prieto_Banos_Layton_2025,species_or_representative_taxon
+Goniobranchus reticulatus,Chromodorididae,"Porifera <sup>24, 25</sup>","Sequestration <sup>24, 25</sup>","Stripes/spots, mottled & distinct rim",Prieto_Banos_Layton_2025,species_or_representative_taxon
+Hypselodoris obscura,Chromodorididae,Porifera <sup>10</sup>,Sequestration <sup>10</sup>,"Stripes/spots, mottled & distinct rim",Prieto_Banos_Layton_2025,species_or_representative_taxon
+Mexichromis antonii,Chromodorididae,Porifera <sup>2</sup>,"Sequestration*<break xmlns:mml=""http://www.w3.org/1998/Math/MathML"" xmlns:xlink=""http://www.w3.org/1999/xlink""></break>(confamilial trait)",Stripes/spots & distinct rim,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Miamira striata,Chromodorididae,Porifera <sup>10</sup>,Sequestration <sup>10</sup>,"Stripes/spots, mottled & distinct rim",Prieto_Banos_Layton_2025,species_or_representative_taxon
+Thorunna florens,Chromodorididae,Porifera <sup>3</sup>,"Sequestration*<break xmlns:mml=""http://www.w3.org/1998/Math/MathML"" xmlns:xlink=""http://www.w3.org/1999/xlink""></break>(confamilial trait)",Stripes/spots & distinct rim,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Tyrinna evelinae,Chromodorididae,"Porifera <sup>18, 34</sup>",Sequestration <sup>10</sup>,Stripes/spots,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Verconia verconis,Chromodorididae,Porifera <sup>2</sup>,"Sequestration*<break xmlns:mml=""http://www.w3.org/1998/Math/MathML"" xmlns:xlink=""http://www.w3.org/1999/xlink""></break>(confamilial trait)","Stripes/spots, mottled & distinct rim",Prieto_Banos_Layton_2025,species_or_representative_taxon
+Corambe obscura,Corambidae,"Bryozoa <sup>2, 35</sup>",–,Uniform,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Dendrodoris densoni,Dendrodorididae,"Porifera <sup>2, 36</sup>","Synthesis <sup>25, 36, 37</sup>",Stripes/spots & mottled,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Doriopsilla janaina,Dendrodorididae,"Porifera <sup>2, 38-40</sup>","Synthesis <sup>10, 40</sup>",Stripes/spots,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Asteronotus cespitosus,Discodorididae,"Porifera <sup>9, 41</sup>","Sequestration <sup>9, 41</sup>",Uniform,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Atagema kimberlyae,Discodorididae,Porifera <sup>2</sup>,–,Stripes/spots,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Carminodoris flammea,Discodorididae,–,–,Mottled,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Diaulula sandiegensis,Discodorididae,"Porifera <sup>2, 10</sup>","Sequestration <sup>10, 42</sup>",Stripes/spots,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Discodoris coerulescens,Discodorididae,Porifera <sup>2</sup>,Sequestration <sup>43</sup>,Mottled,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Geitodoris heathi,Discodorididae,Porifera <sup>2</sup>,–,Mottled,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Halgerda dalanghita,Discodorididae,Porifera <sup>9</sup>,"Sequestration <sup>9, 25</sup>","Stripes/spots, mottled & distinct rim",Prieto_Banos_Layton_2025,species_or_representative_taxon
+Hoplodoris nodulosa,Discodorididae,–,–,Mottled,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Jorunna tomentosa,Discodorididae,Porifera <sup>44</sup>,"Sequestration <sup>25,45</sup>",Stripes/spots,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Paradoris liturata,Discodorididae,Porifera <sup>43</sup>,–,Stripes/spots,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Peltodoris nobilis,Discodorididae,"Porifera <sup>10, 46-48</sup>","Sequestration <sup>10, 48</sup>",Mottled,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Platydoris sanguinea,Discodorididae,Porifera <sup>49</sup>,Synthesis <sup>40</sup>,Mottled,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Rostanga pulchra,Discodorididae,Porifera <sup>2</sup>,–,Uniform,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Sclerodoris tuberculata,Discodorididae,Porifera <sup>2</sup>,Synthesis <sup>10</sup>,Uniform,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Taringa telopia,Discodorididae,Porifera* <sup>50</sup> (confamilial trait),–,"Stripes/spots, mottled & distinct rim",Prieto_Banos_Layton_2025,species_or_representative_taxon
+Thordisa albomacula,Discodorididae,Porifera <sup>2</sup>,–,Uniform,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Aphelodoris sp.,Dorididae,"Porifera <sup>2, 51</sup>",–,Mottled,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Conualevia alba,Dorididae,Porifera <sup>52</sup>,–,Uniform,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Doriopsis granulosa,Dorididae,Porifera <sup>2</sup>,–,Uniform,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Doris pseudoargus,Dorididae,Porifera <sup>53</sup>,Synthesis <sup>54-57</sup>,Mottled,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Ancula gibbosa,Goniodorididae,"Entoprocta <sup>2, 8, 58-61</sup>",–,Stripes/spots,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Goniodoridella savignyi,Goniodorididae,Bryozoa <sup>3</sup> & Chordata<sup>110</sup>,–,"Stripes/spots, mottled & distinct rim",Prieto_Banos_Layton_2025,species_or_representative_taxon
+Goniodoris nodosa,Goniodorididae,"Bryozoa<sup>111</sup> & Chordata <sup>53, 62</sup>","Sequestration<sup>63,64</sup>",Mottled & distinct mantle rim,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Lophodoris danielsseni,Goniodorididae,Bryozoa<sup>112</sup> Chordata (confamilial trait) & Entoprocta <sup>2</sup>,–,Uniform,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Murphydoris puncticulata,Goniodorididae,Bryozoa <sup>2</sup> & Chordata<sup>112</sup>,–,"Stripes/spots, mottled & distinct rim",Prieto_Banos_Layton_2025,species_or_representative_taxon
+Okenia vena,Goniodorididae,Bryozoa <sup>3</sup>,"Sequestration <sup>10, 65</sup>",Mottled & distinct rim,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Trapania reticulata,Goniodorididae,"Bryozoa <sup>3</sup> & Entoprocta <sup>3, 66, 67</sup>",–,Stripes/spots & mottled,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Hexabranchus sanguineus,Hexabranchidae,Porifera <sup>10</sup>,"Sequestration <sup>10, 25</sup>",Mottled & distinct rim,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Mandelia mirocornata,Mandeliidae,"Porifera <sup>68</sup><break xmlns:mml=""http://www.w3.org/1998/Math/MathML"" xmlns:xlink=""http://www.w3.org/1999/xlink""></break>(based on buccal morphology of sponge-feeding dorids)",–,Stripes/spots,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Acanthodoris nanaimoensis,Onchidorididae,"Bryozoa <sup>2, 70</sup>","Synthesis <sup>10, 71</sup>",Distinct rim,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Adalaria slavi,Onchidorididae,"Bryozoa <sup>2, 8, 10, 72, 73</sup>",Sequestration <sup>10</sup>,Uniform,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Atalodoris oblonga,Onchidorididae,"Bryozoa <sup>2, 74</sup>",–,Mottled,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Onchidoris muricata,Onchidorididae,Bryozoa <sup>75-78</sup>,–,Mottled,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Onchimira cavifera,Onchidorididae,Bryozoa <sup>73</sup>,–,Uniform,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Ceratophyllidia sp.,Phyllidiidae,"Porifera*<break xmlns:mml=""http://www.w3.org/1998/Math/MathML"" xmlns:xlink=""http://www.w3.org/1999/xlink""></break>(confamilial trait)","Sequestration*<break xmlns:mml=""http://www.w3.org/1998/Math/MathML"" xmlns:xlink=""http://www.w3.org/1999/xlink""></break>(confamilial trait)",Stripes/spots,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Phyllidia coelestis,Phyllidiidae,"Porifera <sup>9, 79-81</sup>","Sequestration <sup>9, 79-83</sup>",Stripes/spots,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Phyllidiella nigra,Phyllidiidae,Porifera <sup>84</sup>,Sequestration <sup>85-87</sup>,Stripes/spots,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Phyllidiopsis krempfi,Phyllidiidae,Porifera* (based on buccal morphology of sponge-feeding phyllids),Sequestration <sup>10</sup>,Stripes/spots,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Reticulidia halgerda,Phyllidiidae,"Porifera <sup>2, 88</sup>",Sequestration <sup>10</sup>,Stripes/spots,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Colga pacifica,Polyceridae,–,–,Uniform,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Crimora lutea,Polyceridae,"Bryozoa <sup>2, 88</sup>",–,Stripes/spots,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Gymnodoris ceylonica,Polyceridae,Mollusca <sup>89-91</sup>,–,Stripes/spots & distinct rim,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Kalinga ornata,Polyceridae,Generalist <sup>92-94</sup>,–,Stripes/spots,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Kaloplocamus sp.,Polyceridae,"Bryozoa <sup>2, 5</sup>",–,Mottled,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Lecithophorus capensis,Polyceridae,"Bryozoa <sup>2, 95</sup>",–,Uniform,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Limacia sp.,Polyceridae,"Bryozoa <sup>96, 97</sup>",Synthesis <sup>98</sup>,Stripes/spots,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Martadoris mediterranea,Polyceridae,–,–,Mottled,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Nembrotha cristata,Polyceridae,"Chordata <sup>10, 25, 99</sup>","Sequestration <sup>10, 25, 100</sup>",Stripes/spots & mottled,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Palio dubia,Polyceridae,Bryozoa <sup>101</sup>,–,Mottled,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Plocamopherus pecoso,Polyceridae,"Bryozoa <sup>5, 40</sup>",Synthesis <sup>102</sup>,Mottled,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Polycera aurantiomarginata,Polyceridae,"Bryozoa <sup>2, 103, 104</sup>","Sequestration <sup>204, 205</sup> & synthesis*<break xmlns:mml=""http://www.w3.org/1998/Math/MathML"" xmlns:xlink=""http://www.w3.org/1999/xlink""></break>(some Polycera species contain a chemical that is biosynthesized in other nudibranchs) <sub xmlns:mml=""http://www.w3.org/1998/Math/MathML"" xmlns:xlink=""http://www.w3.org/1999/xlink"">10, 102</sub>",Stripes/spots & distinct rim,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Roboastra gracilis,Polyceridae,"Bryozoa <sup>2, 106, 107</sup>","Sequestration <sup>10, 106</sup>",Stripes/spots,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Tambja marbellensis,Polyceridae,"Bryozoa <sup>2, 10, 107</sup>","Sequestration <sup>10, 107, 108</sup>",Stripes/spots & distinct rim,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Thecacera sp.,Polyceridae,Bryozoa <sup>2</sup>,Synthesis <sup>102</sup>,Stripes/spots,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Triopha catalinae,Polyceridae,"Bryozoa <sup>2, 10, 98, 109</sup>","Sequestration & synthesis<sup>10, 98</sup>",Stripes/spots,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Tyrannodoris ernsti,Polyceridae,"Mollusca <sup>5, 105</sup>",Sequestration <sup>10</sup>,Stripes/spots,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Vayssierea sp.,Polyceridae,"Annelida <sup>2, 3, 69</sup>",–,Uniform,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Showajidaia sagamiensis,Showajidaiidae,–,–,Stripes/spots,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Outgroup,Showajidaiidae,,,,Prieto_Banos_Layton_2025,species_or_representative_taxon
+Bathydoris aioca,Showajidaiidae,,,,Prieto_Banos_Layton_2025,species_or_representative_taxon

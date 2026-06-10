@@ -1,0 +1,33 @@
+D06 overlap report
+==================
+
+D06 species list:
+['Aphelodoris varia', 'Chromodoris elisabethina', 'Chromodoris kuiteri', 'Chromodoris lochi', 'Dendrodoris krusensterni', 'Discodoris sp', 'Doriprismatica atromarginata', 'Glossodoris vespa', 'Hypselodoris bennetti', 'Phyllidia ocellata', 'Phyllidia varicosa', 'Phyllidiella pustulosa']
+
+D06 vs D03 overlap summary:
+match_status
+only_in_d03    22
+matched         8
+only_in_d06     4
+
+Matched species between D06 and D03:
+['Aphelodoris varia', 'Chromodoris elisabethina', 'Chromodoris kuiteri', 'Doriprismatica atromarginata', 'Hypselodoris bennetti', 'Phyllidia ocellata', 'Phyllidia varicosa', 'Phyllidiella pustulosa']
+
+D06 vs D04 overlap summary:
+match_status
+only_in_d04    42
+only_in_d06     7
+matched         5
+
+Matched species between D06 and D04:
+['Aphelodoris varia', 'Dendrodoris krusensterni', 'Discodoris sp', 'Doriprismatica atromarginata', 'Hypselodoris bennetti']
+
+D06 vs D05 overlap summary:
+match_status
+matched        10
+only_in_d05     3
+only_in_d06     2
+
+Matched species between D06 and D05:
+['Aphelodoris varia', 'Chromodoris elisabethina', 'Chromodoris kuiteri', 'Discodoris sp', 'Doriprismatica atromarginata', 'Glossodoris vespa', 'Hypselodoris bennetti', 'Phyllidia ocellata', 'Phyllidia varicosa', 'Phyllidiella pustulosa']
+

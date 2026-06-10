@@ -1,0 +1,16 @@
+﻿species,in_d06,in_d05,match_status
+Aphelodoris varia,True,True,matched
+Chromodoris elisabethina,True,True,matched
+Chromodoris kuiteri,True,True,matched
+Chromodoris lochi,True,False,only_in_d06
+Dendrodoris krusensterni,True,False,only_in_d06
+Discodoris sp,True,True,matched
+Doriprismatica atromarginata,True,True,matched
+Glossodoris vespa,True,True,matched
+Goniobranchus collingwoodi,False,True,only_in_d05
+Goniobranchus splendidus,False,True,only_in_d05
+Hypselodoris bennetti,True,True,matched
+Phyllidia elegans,False,True,only_in_d05
+Phyllidia ocellata,True,True,matched
+Phyllidia varicosa,True,True,matched
+Phyllidiella pustulosa,True,True,matched

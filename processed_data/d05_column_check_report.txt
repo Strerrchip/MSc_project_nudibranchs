@@ -1,0 +1,50 @@
+D05 column and species check report
+==================================
+
+Boldness shape:
+(1130, 163)
+
+Detection shape:
+(1130, 163)
+
+Toxicity shape:
+(13, 2)
+
+Boldness last 20 columns:
+['BSA.BCVSsat.Hrz', 'BSA.BMSsat.Vrt', 'BSA.BsSsat.Vrt', 'BSA.BCVSsat.Vrt', 'BSA.BMSL.Hrz', 'BSA.BsSL.Hrz', 'BSA.BCVSL.Hrz', 'BSA.BMSL.Vrt', 'BSA.BsSL.Vrt', 'BSA.BCVSL.Vrt', 'BSA.BMS.Hrz', 'BSA.BsS.Hrz', 'BSA.BCVS.Hrz', 'BSA.BMS.Vrt', 'BSA.BsS.Vrt', 'BSA.BCVS.Vrt', 'Species', 'Distance', 'Individual', 'chem.grp']
+
+Detection last 20 columns:
+['BSA.BCVSsat.Hrz', 'BSA.BMSsat.Vrt', 'BSA.BsSsat.Vrt', 'BSA.BCVSsat.Vrt', 'BSA.BMSL.Hrz', 'BSA.BsSL.Hrz', 'BSA.BCVSL.Hrz', 'BSA.BMSL.Vrt', 'BSA.BsSL.Vrt', 'BSA.BCVSL.Vrt', 'BSA.BMS.Hrz', 'BSA.BsS.Hrz', 'BSA.BCVS.Hrz', 'BSA.BMS.Vrt', 'BSA.BsS.Vrt', 'BSA.BCVS.Vrt', 'Species', 'Distance', 'Individual', 'chem.grp']
+
+Boldness first 5 rows, last 10 columns:
+   BSA.BMS.Hrz  BSA.BsS.Hrz  BSA.BCVS.Hrz  BSA.BMS.Vrt  BSA.BsS.Vrt  BSA.BCVS.Vrt            Species  Distance                      Individual  chem.grp
+0     0.186522     0.000000      0.000000     0.207169     0.000000      0.000000  Aphelodoris varia         5  3_AphelodorisVaria_39_NP_D_RAW         1
+1     0.187637     0.000000      0.000000     0.208407     0.000000      0.000000  Aphelodoris varia        50  3_AphelodorisVaria_39_NP_D_RAW         1
+2     0.206274     0.000000      0.000000     0.229108     0.000000      0.000000  Aphelodoris varia        30  3_AphelodorisVaria_39_NP_D_RAW         1
+3     0.144721     0.111626      0.230635     0.153185     0.115004      0.229860  Aphelodoris varia         2  3_AphelodorisVaria_39_NP_D_RAW         1
+4     0.189636     0.038281      0.060360     0.210860     0.044854      0.065129  Aphelodoris varia        10  3_AphelodorisVaria_39_NP_D_RAW         1
+
+Detection first 5 rows, last 10 columns:
+   BSA.BMS.Hrz  BSA.BsS.Hrz  BSA.BCVS.Hrz  BSA.BMS.Vrt  BSA.BsS.Vrt  BSA.BCVS.Vrt            Species  Distance                      Individual  chem.grp
+0     0.186522     0.000000      0.000000     0.207169     0.000000      0.000000  Aphelodoris varia         5  3_AphelodorisVaria_39_NP_D_RAW         1
+1     0.187637     0.000000      0.000000     0.208407     0.000000      0.000000  Aphelodoris varia        50  3_AphelodorisVaria_39_NP_D_RAW         1
+2     0.206274     0.000000      0.000000     0.229108     0.000000      0.000000  Aphelodoris varia        30  3_AphelodorisVaria_39_NP_D_RAW         1
+3     0.144721     0.111626      0.230635     0.153185     0.115004      0.229860  Aphelodoris varia         2  3_AphelodorisVaria_39_NP_D_RAW         1
+4     0.189636     0.038281      0.060360     0.210860     0.044854      0.065129  Aphelodoris varia        10  3_AphelodorisVaria_39_NP_D_RAW         1
+
+Toxicity full table:
+                         Species  unpal shrimp
+0              Aphelodoris varia         0.000
+1       Chromodoris elisabethina         0.420
+2            Chromodoris kuiteri         0.725
+3                  Discodoris sp         0.000
+4   Doriprismatica atromarginata         0.740
+5              Glossodoris vespa         0.866
+6     Goniobranchus collingwoodi         0.910
+7       Goniobranchus splendidus         0.775
+8          Hypselodoris bennetti         0.730
+9              Phyllidia elegans         0.690
+10            Phyllidia ocellata         0.630
+11            Phyllidia varicosa         0.930
+12        Phyllidiella pustulosa         0.875
+

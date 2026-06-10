@@ -1,0 +1,97 @@
+﻿species,species_original,family,authority,extract_id,body_part,natural_concentration_mg_ml,unpalatability_ps_ed50,unpalatability_tf_ed50,unpalatability_extra,toxicity_ed50,toxicity_extra,chemical_defence_class,number_of_individuals,mean_size_mm_st_dev,collection_location,coordinates,source_dataset
+Notodoris (=Aegires) gardineri,Notodoris (=Aegires) gardineri,Aegiridae,"Eliot, 1906",Nd_gardi,WB,3.5,nr,,,1.02,,WR,8.0,41 ± 6,"Lizard Island, GBR",14°40’S; 145°28’E,chemical_defence_modes_Table_S1
+Ardeadoris egretta,Ardeadoris egretta (1),Chromodorididae,"Rudman, 1984",Ad_egret1,WB,16.96,> 1,> 1,,> 1,,WR,3.0,60 ± 6,"Lizard Island, GBR",14°40’S; 145°28’E,chemical_defence_modes_Table_S1
+Ardeadoris egretta,Ardeadoris egretta (2),Chromodorididae,"Rudman, 1984",Ad_egret2.M,M,25.11,0.65,,,> 1,,WR,1.0,75*,"GBR, supplied by Cairns Marine Ltd. Stratford, QLD",,chemical_defence_modes_Table_S1
+Ardeadoris rubroannulata,Ardeadoris rubroannulata,Chromodorididae,"Rudman, 1986",Ad_rubro,WB,27.89,0.083,,,0.0007,,I&II,2.0,47 ± 3,"Mooloolaba, SE QLD",26°40’S; 153°07’E,chemical_defence_modes_Table_S1
+Ceratosoma brevicaudatum,Ceratosoma brevicaudatum,Chromodorididae,"Abraham, 1876",Cr_brevi,WB,6.12,>1,>1,nr,0.72,,WR,3.0,75 ± 14,"Nelson Bay, NSW",32°72’S; 152°15’E,chemical_defence_modes_Table_S1
+Ceratosoma trilobatum,Ceratosoma trilobatum,Chromodorididae,"Gray, 1850",Cr_trilo,WB,7.5,>1,,,0.68,,WR,3.0,130,"North Stradbroke Island, SE QLD",27°41’S; 153°53’E,chemical_defence_modes_Table_S1
+Chromodoris elisabethina,Chromodoris elisabethina,Chromodorididae,"Bergh, 1877",Cm_elisa1,WB,13.15,0.45,0.04,0.26,0.004,,I&II,23.0,38 ± 2,"Mooloolaba, SE QLD",26°40’S; 153°07’E,chemical_defence_modes_Table_S1
+Chromodoris elisabethina,Chromodoris elisabethina (2),Chromodorididae,,Cm_elisa2,WB,10.74,> 0.13,,1.1,,,,12.0,36 ± 7,"Mooloolaba, SE QLD",26o40’S; 153o07’E,chemical_defence_modes_Table_S1
+Chromodoris kuiteri,Chromodoris kuiteri,Chromodorididae,"Rudman, 1982",Cm_kuite1,WB,9.63,0.26,0.08,,0.002,,I&II,6.0,58 ± 7,"Mooloolaba, SE QLD",26o40’S; 153o07’E,chemical_defence_modes_Table_S1
+Chromodoris kuiteri,Chromodoris kuiteri (2),Chromodorididae,,Cm_kuite2,WB,9.54,0.26,,0.23,,,,15.0,44 ± 11,"Mooloolaba, SE QLD",26o40’S; 153o07’E,chemical_defence_modes_Table_S1
+Doriprismatica atromarginata,Doriprismatica atromarginata,Chromodorididae,"Cuvier, 1804",Dp_atrom1,WB,12.92,0.37,0.07,0.2,0.07,,I&II,36.0,29 ± 2,"Mooloolaba, SE QLD",26o40’S; 153o07’E,chemical_defence_modes_Table_S1
+Doriprismatica atromarginata,Doriprismatica atromarginata (2),Chromodorididae,,Dp_atrom2,WB,10.93,0.15,,0.54,,,,48.0,33 ± 11,"Mackay, NE QLD (1)
+Mooloolaba, SE QLD (24)
+North Stradbroke Island, SE QLD (15)
+Coffs Harbour, NE NSW (7)
+Nelson Bay, NSW (1)","21o39’S; 150o16’E
+26o40’S; 153°07’E
+27°41’S; 153°53’E
+30°18’S; 153°09’E
+32°72’S; 152°15’E",chemical_defence_modes_Table_S1
+Glossodoris hikuerensis,Glossodoris hikuerensis,Chromodorididae,"Pruvot-Fol, 1954",Gl_hikeu,WB,19.93,nr,>1,,nr,,WR,1.0,110,"Lizard Island, GBR",14o40’S; 145o28’E,chemical_defence_modes_Table_S1
+Goniobranchus collingwoodi,Goniobranchus collingwoodi,Chromodorididae,"Rudman, 1987",Gn_colli,WB,13.65,0.09,1.12,,nr,,II / WR,1.0,80,"GBR, supplied by Cairns Marine Ltd. Stratford, QLD",,chemical_defence_modes_Table_S1
+Goniobranchus daphne,Goniobranchus daphne,Chromodorididae,"Angas, 1864",Gn_daphn,WB,12.31,0.43,,,> 0.5,,II,8.0,29 ± 2,"Cleveland Point, SE QLD",27o30’S; 153o17’E,chemical_defence_modes_Table_S1
+Goniobranchus splendidus,Goniobranchus splendidus (1),Chromodorididae,"Angas, 1864",Gn_splend1,WB,32.4,0.18,,,nr,,II,22.0,37 ± 3,"Coffs Harbour, NSW",30o18’S; 153o09’E,chemical_defence_modes_Table_S1
+Goniobranchus splendidus,Goniobranchus splendidus (2),Chromodorididae,,Gn_splend2.M,M,26.89,,,,0.52,,,6.0,28 ± 6,"North Stradbroke Island, SE QLD",27o41’S; 153o53’E,chemical_defence_modes_Table_S1
+Goniobranchus splendidus,Goniobranchus splendidus (3),Chromodorididae,,Gn_splend3,WB,13.95,0.25,,0.44,nr,3,II,53.0,28 ± 13,"Mooloolaba, SE QLD",26o40’S; 153o07’E,chemical_defence_modes_Table_S1
+Goniobranchus tasmaniensis,Goniobranchus tasmaniensis,Chromodorididae,"Bergh, 1905",Gn_tasma,WB,37.59,< 0.25,,,0.86,,II,5.0,39 ± 3,"Sydney, NSW",34o04’S; 151o09’E,chemical_defence_modes_Table_S1
+Goniobranchus tinctorius,Goniobranchus tinctorius (1),Chromodorididae,"Rüppell & Leuckart, 1830",Gn_tinct1,WB,19.7,0.15,,,nr,,II,4.0,53 ± 4,"Mackay, NE QLD",21o39’S; 150o16’E,chemical_defence_modes_Table_S1
+Goniobranchus tinctorius,Goniobranchus tinctorius (2),Chromodorididae,,Gn_tinct2.M,M,15.5,,,,0.86,,,2.0,55 ± 13,"Mooloolaba, SE QLD",26o40’S; 153o07’E,chemical_defence_modes_Table_S1
+Hypselodoris bennetti,Hypselodoris bennetti,Chromodorididae,"Angas, 1864",Hp_benne,WB,15.17,0.27,,,0.12,,I&II,26.0,24 ± 1,"Coffs Harbour, NE NSW",30o18’S; 153o09’E,chemical_defence_modes_Table_S1
+Hypselodoris obscura,Hypselodoris obscura,Chromodorididae,"Stimpson, 1855",Hp_obscu1,WB,8.36,>1,>1,,0.35,,I,13.0,38 ± 4,"Gold Coast, SE QLD (9)
+North Stradbroke Island, SE QLD (3)
+Mooloolaba, SE QLD (1)","27°56’S; 153°25’E
+27°41’S; 153°53’E
+26°40’S; 153°07’E",chemical_defence_modes_Table_S1
+Hypselodoris obscura,Hypselodoris obscura (2),Chromodorididae,,Hp_obscu2,WB,9.8,,,> 1,,,,10.0,38 ± 12,"Cleveland Point, SE QLD (1)
+Gold Coast, SE QLD (1)
+Mooloolaba, SE QLD (5)
+North Stradbroke Island, SE QLD (3)","27°30’S; 153°17’E
+27°56’S; 153°25’E
+26°40’S; 153°07’E
+27°41’S; 153°53’E",chemical_defence_modes_Table_S1
+Hypselodoris tryoni,Hypselodoris tryoni,Chromodorididae,"Garrett, 1873",Hp_tryon1,WB,10.87,nr,nr,0.47,NA (inconclusive),,,3.0,68 ± 14,"Lizard Island, GBR (1)
+GBR, supplied by Cairns Marine Ltd. Stratford, QLD  (2)","14°40’S; 145°28’E
+NA
+",chemical_defence_modes_Table_S1
+Hypselodoris tryoni,Hypselodoris tryoni (2),Chromodorididae,,Hp_tryon2,WB,13.01,,,0.53,,,,6.0,46 ± 17,"Mooloolaba, SE QLD (3)
+GBR, supplied by Cairns Marine Ltd. (2)
+Unknown (1)","26o40’S; 153o07’E
+NA
+NA",chemical_defence_modes_Table_S1
+Mexichromis festiva,Mexichromis festiva,Chromodorididae,"Angas, 1864",Mx_festiNB,WB,29.17,>1,,,,,WR,32.0,21 ± 1,"Nelson Bay, NSW (15)",32o72’S; 152o15’E,chemical_defence_modes_Table_S1
+Dendrodoris krusensternii (=denisoni),Dendrodoris krusensternii (=denisoni),Dendrodorididae,"Gray, 1850",Dn_kruse,WB,8.46,, nr,,nr,,NR,1.0,85,"North Stradbroke Island, SE QLD",27 o41’S; 153 o53’E,chemical_defence_modes_Table_S1
+Dendrodoris nigra,Dendrodoris nigra,Dendrodorididae,"Stimpson, 1855",Dn_nigra,WB,18.39,,nr,,> 1,,WR/NR,5.0,38 ± 3,"North Stradbroke Island, SE QLD",27 o41’S; 153 o53’E,chemical_defence_modes_Table_S1
+Dendrodoris tuberculosa,Dendrodoris tuberculosa,Dendrodorididae,"Quoy & Gaimard, 1832",Dn_tuber,WB,5.57,nr,nr,nr,nr,,NR,2.0,112 ± 13^,"Lizard Island, GBR",14o40’S; 145o28’E,chemical_defence_modes_Table_S1
+Aphelodoris varia,Aphelodoris varia,Dorididae,"Abraham, 1877",Ap_var1,WB,6.52,nr,,,nr,,NR,1.0,65,"Sydney, NSW",34o04’S; 151o09’E,chemical_defence_modes_Table_S1
+Aphelodoris varia,Aphelodoris varia,Dorididae,,Ap_var2,WB,2.7,nr,,> 1,,1,WR/NR,6.0,53 ± 14,"Nelson Bay, NSW",32o72’S; 152o15’E,chemical_defence_modes_Table_S1
+Halgerda aurantiomaculata,Halgerda aurantiomaculata,Discodorididae,"Allan, 1932",Hg_auran,WB,5.65,nr,,,nr,,NR,3.0,25,"GBR, supplied by Cairns Marine Ltd.",,chemical_defence_modes_Table_S1
+Sebadoris fragilis,Sebadoris fragilis (1),Discodorididae,"Alder & Hancock, 1864",Sb_fragi1,WB,1.42,nr,nr,nr,nr,,NR,1.0,100,"North Stradbroke Island, SE QLD",27 o41’S; 153 o53’E,chemical_defence_modes_Table_S1
+Sebadoris fragilis,Sebadoris fragilis,Discodorididae,,Sb_fragi2,WB,3.13,nr,,nr,,,NR,4.0,53 ± 19,"Gold Coast, SE QLD (2)
+Nelson Bay, NSW (2)","27o56’S; 153o25’E
+32°72’S; 152°15’E",chemical_defence_modes_Table_S1
+Phyllidia coelestis,Phyllidia coelestis (1),Phyllidiidae,"Bergh, 1905",Ph_coele1,WB,6.81,0.54,,,>1 (1.41),,WR,3.0,53 ± 18,"Lizard Island, GBR",14o40’S; 145o28’E,chemical_defence_modes_Table_S1
+Phyllidia coelestis,Phyllidia coelestis (2),Phyllidiidae,,Ph_coele2,WB,7.8,0.31,,0.69,,2.47,,7.0,49 ± 10,"Lizard Island, GBR (4)
+Mackay, NE QLD (1)
+Mooloolaba, SE QLD (1)
+GBR, supplied by Cairns Marine Ltd. Stratford, QLD (1)","14°40’S; 145°28’E
+21°39’S; 150°16’E
+26°40’S; 153°07’E
+NA",chemical_defence_modes_Table_S1
+Phyllidia elegans,Phyllidia elegans,Phyllidiidae,"Bergh, 1869 ",Ph_elega,WB,5.03,0.31,,,>1,,II,8.0,49 ± 4,"Mooloolaba, SE QLD",26o40’S; 153o07’E,chemical_defence_modes_Table_S1
+Phyllidia ocellata,Phyllidia ocellata,Phyllidiidae,"Cuvier, 1804 ",Ph_ocell,WB,7.0,0.37,,,0.6,,II,7.0,25 ± 2,"Mooloolaba, SE QLD",26o40’S; 153o07’E,chemical_defence_modes_Table_S1
+Phyllidia varicosa,Phyllidia varicosa (1),Phyllidiidae,"Lamarck, 1801",Ph_varic1,WB,7.48,0.12,>1,>1,0.73,,WR,1.0,60,"GBR, supplied by Cairns Marine Ltd. Stratford, QLD",,chemical_defence_modes_Table_S1
+Phyllidia varicosa,Phyllidia varicosa (2),Phyllidiidae,,Ph_varic2,WB,9.3,0.02,,,0.22,,I&II,3.0,66 ± 10,"Mooloolaba, SE QLD ",26o40’S; 153o07’E,chemical_defence_modes_Table_S1
+Phyllidia varicosa,Phyllidia varicosa (3),Phyllidiidae,,Ph_varic3,WB,7.83,,>1,>1,,,,2.0,48 ± 35,"Lizard Island, GBR ",14o40’S; 145o28’E,chemical_defence_modes_Table_S1
+Phyllidia varicosa,Phyllidia varicosa (4),Phyllidiidae,,Ph_varic4,WB,7.34,0.1,,0.6,,,,9.0,83 ± 26,"Lizard Island, GBR (4)
+Mackay, NE QLD (1)
+Mooloolaba, SE QLD (2)
+GBR, supplied by Cairns Marine Ltd. Stratford, QLD (2)","14°40’S; 145°28’E
+21°39’S; 150°16’E
+26°40’S; 153°07’E
+NA",chemical_defence_modes_Table_S1
+Phyllidiella pustulosa,Phyllidiella pustulosa (1),Phyllidiidae,"Cuvier, 1804",Pl_pustu1,WB,13.61,0.2,,,0.27,,I&II,23.0,30 ± 11,"Mooloolaba, SE QLD",26o40’S; 153o07’E,chemical_defence_modes_Table_S1
+Phyllidiella pustulosa,Phyllidiella pustulosa (2),Phyllidiidae,,Pl_pustu2,WB,19.22,0.05,0.72,,0.85,,II/WR,2.0,40 ± 5,"Lizard Island, GBR",14o40’S; 145o28’E,chemical_defence_modes_Table_S1
+Phyllidiella pustulosa,Phyllidiella pustulosa (3),Phyllidiidae,,Pl_pustu3,WB,8.65,0.12,,0.51,0.61,2,II/WR,53.0,36 ± 13,"Lizard Island, GBR (12)
+Mooloolaba, SE QLD (27)
+Mackay, NE QLD (2)
+North Stradbroke Island, SE QLD (1)
+Hexam Island, NSW (1)
+Unknown (10)","14°40’S; 145°28’E
+26°40’S; 153°07’E
+21°39’S; 150°16’E
+27°41’S; 153°53’E
+32°49’S; 151°41’E
+NA",chemical_defence_modes_Table_S1
+Phyllidiopsis shireenae,Phyllidiopsis shireenae,Phyllidiidae,"Brunckhorst, 1990 ",Pp_shiree,WB,1.18,0.14,,,>1,,II,3.0,65 ± 3,"GBR, supplied by Cairns Marine Ltd. Stratford, QLD",,chemical_defence_modes_Table_S1

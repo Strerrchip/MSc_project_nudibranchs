@@ -1,0 +1,20 @@
+D05 + D06 and D03 + D05 + D06 report
+====================================
+
+D05 + D06 matched dataset shape:
+(10, 493)
+
+D05 + D06 matched species:
+['Aphelodoris varia', 'Chromodoris elisabethina', 'Chromodoris kuiteri', 'Discodoris sp', 'Doriprismatica atromarginata', 'Glossodoris vespa', 'Hypselodoris bennetti', 'Phyllidia ocellata', 'Phyllidia varicosa', 'Phyllidiella pustulosa']
+
+D03 + D05 + D06 core matched dataset shape:
+(8, 507)
+
+D03 + D05 + D06 core matched species:
+['Aphelodoris varia', 'Chromodoris elisabethina', 'Chromodoris kuiteri', 'Doriprismatica atromarginata', 'Hypselodoris bennetti', 'Phyllidia ocellata', 'Phyllidia varicosa', 'Phyllidiella pustulosa']
+
+Saved D05 + D06 file:
+C:\Users\Cicad\Desktop\MSc_project_nudibranchs\processed_data\d05_d06_matched_species_summary.csv
+
+Saved D03 + D05 + D06 core file:
+C:\Users\Cicad\Desktop\MSc_project_nudibranchs\processed_data\core_d03_d05_d06_matched_species.csv

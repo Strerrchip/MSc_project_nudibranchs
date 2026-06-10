@@ -1,0 +1,27 @@
+D05 combined and overlap report
+===============================
+
+D05 combined species summary shape:
+(13, 329)
+
+D05 combined species list:
+['Aphelodoris varia', 'Chromodoris elisabethina', 'Chromodoris kuiteri', 'Discodoris sp', 'Doriprismatica atromarginata', 'Glossodoris vespa', 'Goniobranchus collingwoodi', 'Goniobranchus splendidus', 'Hypselodoris bennetti', 'Phyllidia elegans', 'Phyllidia ocellata', 'Phyllidia varicosa', 'Phyllidiella pustulosa']
+
+D05 vs D03 overlap summary:
+match_status
+only_in_d03    19
+matched        11
+only_in_d05     2
+
+Matched species between D05 and D03:
+['Aphelodoris varia', 'Chromodoris elisabethina', 'Chromodoris kuiteri', 'Doriprismatica atromarginata', 'Goniobranchus collingwoodi', 'Goniobranchus splendidus', 'Hypselodoris bennetti', 'Phyllidia elegans', 'Phyllidia ocellata', 'Phyllidia varicosa', 'Phyllidiella pustulosa']
+
+D05 vs D04 overlap summary:
+match_status
+only_in_d04    41
+only_in_d05     7
+matched         6
+
+Matched species between D05 and D04:
+['Aphelodoris varia', 'Discodoris sp', 'Doriprismatica atromarginata', 'Goniobranchus collingwoodi', 'Goniobranchus splendidus', 'Hypselodoris bennetti']
+
