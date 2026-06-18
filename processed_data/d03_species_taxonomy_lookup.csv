@@ -1,0 +1,31 @@
+﻿species,family,chemical_defence_class,unpalatability_ps_ed50,unpalatability_tf_ed50,toxicity_ed50,image_collection_priority,image_search_status,n_images_found,n_usable_images,image_sources_checked,image_collection_notes,ott,gbif,worms,wikidata,popularity,popularity_rank,taxonomy_match_status
+Aphelodoris varia,Dorididae,NR; WR/NR,nr,,nr,pilot,not_started,0,0,,,2875755.0,4596633.0,533945.0,3620603.0,106508.75,1228441.0,matched
+Doriprismatica atromarginata,Chromodorididae,I&II,0.15; 0.37,0.07,0.07,pilot,not_started,0,0,,,5871.0,6519570.0,558499.0,1115231.0,106746.58,1227624.0,matched
+Hypselodoris bennetti,Chromodorididae,I&II,0.27,,0.12,pilot,not_started,0,0,,,795081.0,4596900.0,458669.0,3787986.0,107077.88,1227353.0,matched
+Phyllidia ocellata,Phyllidiidae,II,0.37,,0.6,pilot,not_started,0,0,,,470876.0,8148274.0,536623.0,949250.0,106211.34,1229072.0,matched
+Phyllidiella pustulosa,Phyllidiidae,I&II; II/WR,0.05; 0.12; 0.2,0.72,0.27; 0.61; 0.85,pilot,not_started,0,0,,,578610.0,2291741.0,536574.0,3199629.0,106161.98,1229197.0,matched
+Ardeadoris egretta,Chromodorididae,WR,0.65; > 1,> 1,> 1,full_list,not_started,0,0,,,1093142.0,5859582.0,558430.0,864575.0,106619.96,1227917.0,matched
+Ardeadoris rubroannulata,Chromodorididae,I&II,0.083,,0.0007,full_list,not_started,0,0,,,999877.0,6519611.0,597317.0,4787864.0,106577.75,1228113.0,matched
+Ceratosoma brevicaudatum,Chromodorididae,WR,>1,>1,0.72,full_list,not_started,0,0,,,523708.0,,533901.0,3664996.0,106677.42,1227744.0,matched
+Ceratosoma trilobatum,Chromodorididae,WR,>1,,0.68,full_list,not_started,0,0,,,1093150.0,,212891.0,2946393.0,106687.62,1227708.0,matched
+Chromodoris elisabethina,Chromodorididae,I&II,0.45; > 0.13,0.04,0.004,full_list,not_started,0,0,,,54212.0,5859615.0,527354.0,578974.0,107389.06,1226942.0,matched
+Chromodoris kuiteri,Chromodorididae,I&II,0.26,0.08,0.002,full_list,not_started,0,0,,,57708.0,4596865.0,558237.0,5113863.0,107295.18,1227123.0,matched
+Dendrodoris krusensternii (=denisoni),Dendrodorididae,NR,, nr,nr,full_list,not_started,0,0,,,,,,,,,not_matched
+Dendrodoris nigra,Dendrodorididae,WR/NR,,nr,> 1,full_list,not_started,0,0,,,57714.0,4359827.0,139519.0,3705419.0,105900.47,1230350.0,matched
+Dendrodoris tuberculosa,Dendrodorididae,NR,nr,nr,nr,full_list,not_started,0,0,,,1098563.0,4596765.0,537016.0,13584778.0,105900.47,1230350.0,matched
+Glossodoris hikuerensis,Chromodorididae,WR,nr,>1,nr,full_list,not_started,0,0,,,795078.0,5859599.0,559949.0,3109238.0,106767.63,1227559.0,matched
+Goniobranchus collingwoodi,Chromodorididae,II / WR,0.09,1.12,nr,full_list,not_started,0,0,,,168523.0,6519789.0,597330.0,3675923.0,106736.54,1227639.0,matched
+Goniobranchus daphne,Chromodorididae,II,0.43,,> 0.5,full_list,not_started,0,0,,,1000191.0,6519771.0,597331.0,3773273.0,106745.24,1227625.0,matched
+Goniobranchus splendidus,Chromodorididae,II,0.18; 0.25,,0.52; nr,full_list,not_started,0,0,,,614048.0,8264152.0,771431.0,2369688.0,106777.58,1227554.0,matched
+Goniobranchus tasmaniensis,Chromodorididae,II,< 0.25,,0.86,full_list,not_started,0,0,,,691461.0,7440266.0,835444.0,30139387.0,106679.26,1227741.0,matched
+Goniobranchus tinctorius,Chromodorididae,II,0.15,,0.86; nr,full_list,not_started,0,0,,,5512146.0,6519796.0,597374.0,1115245.0,106757.91,1227565.0,matched
+Halgerda aurantiomaculata,Discodorididae,NR,nr,,nr,full_list,not_started,0,0,,,1091007.0,4596642.0,599498.0,5641980.0,106668.39,1227761.0,matched
+Hypselodoris obscura,Chromodorididae,I,>1,>1,0.35,full_list,not_started,0,0,,,271732.0,4596903.0,558622.0,2779009.0,107022.88,1227373.0,matched
+Hypselodoris tryoni,Chromodorididae,,nr,nr,NA (inconclusive),full_list,not_started,0,0,,,7498071.0,6126802.0,558646.0,1133633.0,107162.92,1227270.0,matched
+Mexichromis festiva,Chromodorididae,WR,>1,,,full_list,not_started,0,0,,,271735.0,4596847.0,558358.0,2518227.0,106626.08,1227905.0,matched
+Notodoris (=Aegires) gardineri,Aegiridae,WR,nr,,1.02,full_list,not_started,0,0,,,,,,,,,not_matched
+Phyllidia coelestis,Phyllidiidae,WR,0.31; 0.54,,>1 (1.41),full_list,not_started,0,0,,,493039.0,4359792.0,212836.0,3381846.0,106198.12,1229099.0,matched
+Phyllidia elegans,Phyllidiidae,II,0.31,,>1,full_list,not_started,0,0,,,83554.0,4596645.0,536617.0,3021603.0,106180.44,1229157.0,matched
+Phyllidia varicosa,Phyllidiidae,I&II; WR,0.02; 0.1; 0.12,>1,0.22; 0.73,full_list,not_started,0,0,,,470875.0,4359788.0,212835.0,1118097.0,106323.33,1228805.0,matched
+Phyllidiopsis shireenae,Phyllidiidae,II,0.14,,>1,full_list,not_started,0,0,,,2875613.0,4596656.0,536717.0,3023226.0,106081.17,1229345.0,matched
+Sebadoris fragilis,Discodorididae,NR,nr,nr,nr,full_list,not_started,0,0,,,2876586.0,6519225.0,548868.0,7442329.0,106558.14,1228219.0,matched

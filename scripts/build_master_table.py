@@ -2210,3 +2210,177 @@ print("\n" + "=" * 60)
 print("FINAL DATASET PRIORITY REPORT SAVED TO:")
 print(final_dataset_priority_report)
 print("=" * 60)
+
+# ------------------------------------------------------------
+# 30. Create simplified D03 species list for image collection
+# ------------------------------------------------------------
+
+print("\nCreating simplified D03 species list for image collection...")
+
+# Start from the D03 species-level summary
+d03_species_list = table_s1_species_summary.copy()
+
+# Keep only the columns that are useful for image collection and analysis
+possible_d03_columns = [
+    "species",
+    "family",
+    "chemical_defence_class",
+    "unpalatability_ps_ed50",
+    "unpalatability_tf_ed50",
+    "toxicity_ed50"
+]
+
+existing_d03_columns = [
+    col for col in possible_d03_columns
+    if col in d03_species_list.columns
+]
+
+d03_species_list = d03_species_list[existing_d03_columns].copy()
+
+# Remove duplicated species if any
+d03_species_list = d03_species_list.drop_duplicates(subset=["species"]).copy()
+
+# Add image collection planning columns
+d03_species_list["image_collection_priority"] = "full_list"
+d03_species_list["image_search_status"] = "not_started"
+d03_species_list["n_images_found"] = 0
+d03_species_list["n_usable_images"] = 0
+d03_species_list["image_sources_checked"] = ""
+d03_species_list["image_collection_notes"] = ""
+
+# Mark pilot species
+pilot_species = [
+    "Aphelodoris varia",
+    "Doriprismatica atromarginata",
+    "Hypselodoris bennetti",
+    "Phyllidia ocellata",
+    "Phyllidiella pustulosa"
+]
+
+d03_species_list.loc[
+    d03_species_list["species"].isin(pilot_species),
+    "image_collection_priority"
+] = "pilot"
+
+# Sort by priority first, then species name
+d03_species_list["priority_order"] = d03_species_list["image_collection_priority"].map({
+    "pilot": 1,
+    "full_list": 2
+})
+
+d03_species_list = (
+    d03_species_list
+    .sort_values(["priority_order", "species"])
+    .drop(columns=["priority_order"])
+    .reset_index(drop=True)
+)
+
+# Save output
+d03_species_list_output = PROCESSED_DIR / "species_for_image_collection.csv"
+
+d03_species_list.to_csv(
+    d03_species_list_output,
+    index=False,
+    encoding="utf-8-sig"
+)
+
+print("\nSaved simplified D03 species list for image collection to:")
+print(d03_species_list_output)
+
+print("\nD03 species list shape:")
+print(d03_species_list.shape)
+
+print("\nPilot species:")
+print(d03_species_list[d03_species_list["image_collection_priority"] == "pilot"]["species"].tolist())
+
+print("\nAll D03 species:")
+print(d03_species_list["species"].tolist())
+
+# ------------------------------------------------------------
+# 31. Match D03 species list to nudibranchia taxonomy CSV
+# ------------------------------------------------------------
+
+print("\nMatching D03 species list to nudibranchia taxonomy CSV...")
+
+taxonomy_file = RAW_DIR / "neudibranchia.csv"
+
+print("\nReading taxonomy file:")
+print(taxonomy_file)
+
+taxonomy_raw = pd.read_csv(taxonomy_file)
+
+print("\nTaxonomy table shape:")
+print(taxonomy_raw.shape)
+
+print("\nTaxonomy table columns:")
+print(taxonomy_raw.columns.tolist())
+
+# Keep useful taxonomy columns
+taxonomy_cols = [
+    "name",
+    "ott",
+    "gbif",
+    "worms",
+    "wikidata",
+    "popularity",
+    "popularity_rank"
+]
+
+existing_taxonomy_cols = [
+    col for col in taxonomy_cols
+    if col in taxonomy_raw.columns
+]
+
+taxonomy_lookup = taxonomy_raw[existing_taxonomy_cols].copy()
+
+# Rename name column to species for matching
+taxonomy_lookup = taxonomy_lookup.rename(columns={"name": "species"})
+
+# Clean species names for matching
+taxonomy_lookup["species"] = taxonomy_lookup["species"].astype(str).str.strip()
+d03_species_for_taxonomy = d03_species_list.copy()
+d03_species_for_taxonomy["species"] = d03_species_for_taxonomy["species"].astype(str).str.strip()
+
+# Merge D03 species list with taxonomy lookup
+d03_taxonomy_lookup = d03_species_for_taxonomy.merge(
+    taxonomy_lookup,
+    on="species",
+    how="left"
+)
+
+# Add match status
+d03_taxonomy_lookup["taxonomy_match_status"] = "matched"
+
+d03_taxonomy_lookup.loc[
+    d03_taxonomy_lookup["ott"].isna()
+    & d03_taxonomy_lookup["gbif"].isna()
+    & d03_taxonomy_lookup["worms"].isna()
+    & d03_taxonomy_lookup["wikidata"].isna(),
+    "taxonomy_match_status"
+] = "not_matched"
+
+# Save output
+d03_taxonomy_lookup_output = PROCESSED_DIR / "d03_species_taxonomy_lookup.csv"
+
+d03_taxonomy_lookup.to_csv(
+    d03_taxonomy_lookup_output,
+    index=False,
+    encoding="utf-8-sig"
+)
+
+print("\nSaved D03 species taxonomy lookup to:")
+print(d03_taxonomy_lookup_output)
+
+print("\nD03 taxonomy lookup shape:")
+print(d03_taxonomy_lookup.shape)
+
+print("\nTaxonomy match summary:")
+print(d03_taxonomy_lookup["taxonomy_match_status"].value_counts())
+
+print("\nSpecies not matched to taxonomy CSV:")
+print(
+    d03_taxonomy_lookup.loc[
+        d03_taxonomy_lookup["taxonomy_match_status"] == "not_matched",
+        "species"
+    ].tolist()
+)

@@ -67,7 +67,7 @@ Species:
 ['Aphelodoris varia', 'Doriprismatica atromarginata', 'Goniobranchus collingwoodi', 'Goniobranchus splendidus', 'Hypselodoris bennetti']
 Role: Very complete but small; likely supplementary only.
 
-7. Current Conclusion
+7. Current recommendation
 -------------------------
 Use D03 + D05 as the main candidate analysis dataset.
 Use D03 + D05 + D06 as a stricter core exploratory dataset.
