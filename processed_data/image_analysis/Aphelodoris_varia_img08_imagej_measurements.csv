@@ -1,0 +1,13 @@
+ ,Label,Area,Mean,StdDev,Min,Max,Median
+1,Aphelodoris_varia_img08.jpg:nudibranch,179042,149.504,51.650,0,255,161
+2,Aphelodoris_varia_img08.jpg:background,146746,106.981,29.968,1,249,109
+3,Aphelodoris_varia_img08.jpg (blue):nudibranch,179042,127.582,56.290,0,255,132
+4,Aphelodoris_varia_img08.jpg (blue):background,146746,87.077,29.861,0,247,88
+5,Aphelodoris_varia_img08.jpg (green):nudibranch,179042,158.447,55.863,0,255,171
+6,Aphelodoris_varia_img08.jpg (green):background,146746,114.531,34.601,0,255,116
+7,Aphelodoris_varia_img08.jpg (red):nudibranch,179042,162.475,47.323,0,255,174
+8,Aphelodoris_varia_img08.jpg (red):background,146746,119.332,28.407,0,255,121
+9,Aphelodoris_varia_img08.jpg:nudibranch:Saturation,179042,74.097,44.298,0,255,66
+10,Aphelodoris_varia_img08.jpg:background:Saturation,146746,77.898,30.867,0,255,74
+11,Aphelodoris_varia_img08.jpg:nudibranch:Brightness,179042,168.993,49.387,0,255,184
+12,Aphelodoris_varia_img08.jpg:background:Brightness,146746,122.798,30.748,1,255,124
