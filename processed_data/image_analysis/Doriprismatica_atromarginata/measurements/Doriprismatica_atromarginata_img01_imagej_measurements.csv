@@ -1,0 +1,13 @@
+ ,Label,Area,Mean,StdDev,Min,Max,Median
+1,Doriprismatica_atromarginata_img01.jpg:nudibranch,207777,171.707,61.085,2,255,187
+2,Doriprismatica_atromarginata_img01.jpg:background,90689,129.830,46.136,8,252,133
+3,Doriprismatica_atromarginata_img01.jpg (blue):nudibranch,207777,152.745,66.260,0,255,163
+4,Doriprismatica_atromarginata_img01.jpg (blue):background,90689,90.544,44.992,0,252,87
+5,Doriprismatica_atromarginata_img01.jpg (green):nudibranch,207777,175.580,62.305,3,255,193
+6,Doriprismatica_atromarginata_img01.jpg (green):background,90689,131.913,48.889,6,254,135
+7,Doriprismatica_atromarginata_img01.jpg (red):nudibranch,207777,186.830,57.033,4,255,205
+8,Doriprismatica_atromarginata_img01.jpg (red):background,90689,167.036,49.267,10,255,176
+9,Doriprismatica_atromarginata_img01.jpg:nudibranch:Saturation,207777,58.477,44.364,0,255,50
+10,Doriprismatica_atromarginata_img01.jpg:background:Saturation,90689,122.508,42.570,0,255,126
+11,Doriprismatica_atromarginata_img01.jpg:nudibranch:Brightness,207777,187.913,57.358,4,255,206
+12,Doriprismatica_atromarginata_img01.jpg:background:Brightness,90689,167.199,49.192,10,255,177
