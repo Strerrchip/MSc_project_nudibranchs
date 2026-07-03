@@ -12,3 +12,7 @@ papers/
 ~$*.xlsx
 
 .vscode/
+
+# Model files
+mobile_sam.pt
+*.pt

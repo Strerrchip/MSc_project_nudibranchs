@@ -1,0 +1,264 @@
+Previous image-analysis workflow summary
+
+Purpose of this note:
+To summarise previous nudibranch image-analysis workflows and identify what can be borrowed or adapted for my own automated Python workflow.
+
+My project goal:
+Use D03 chemical defence / toxicity / unpalatability data as the biological dataset, and develop an automated image-analysis workflow to extract colour, pattern and animal-background contrast traits from citizen-science nudibranch images.
+
+Important point:
+The manual Fiji workflow is now treated as a pilot / validation baseline, not the final method. The final workflow should be computational and automated as much as possible.
+
+==================================================
+D03 - Winters et al. 2022
+
+Role in my project:
+D03 is the core biological dataset for my project. It provides the chemical defence, toxicity and unpalatability information that I will later compare with image-derived traits.
+
+Main use:
+D03 is not mainly useful as an image-analysis workflow paper. Its main role is to provide defence variables for the species in my image dataset.
+
+Useful variables:
+- species
+- chemical defence class
+- toxicity / LD50
+- unpalatability / ED50
+- predator assay type
+- compound type
+- body part / extract type
+
+Important biological idea:
+D03 separates chemical defence into toxicity and unpalatability. Toxicity is related to the idea of chemical defence as a weapon, while unpalatability is related to chemical defence as a deterrent.
+
+Important issue for my project:
+Toxicity and unpalatability are not always the same. Some species may be toxic but not strongly unpalatable, while others may be unpalatable but not strongly toxic. Therefore, I should not treat chemical defence as only one simple continuous variable.
+
+How I may use D03 variables:
+1. Compare image-derived traits with chemical defence class.
+2. Compare image-derived traits with toxicity.
+3. Compare image-derived traits with unpalatability.
+4. Compare animal-only metrics and animal-background metrics separately against D03 defence variables.
+
+Important data issue:
+D03 data may not always be simple species-level data. Some species may have multiple extracts, different body parts, different assays, or different predator responses. Before merging with image-derived traits, I need to decide how to summarise D03 at species level.
+
+Connection to my image workflow:
+D03 gives the biological endpoint. My automated Python workflow will produce image-derived traits, including animal-only metrics and animal-background metrics. The main analysis will test whether these traits are associated with D03 toxicity, unpalatability or chemical defence class.
+
+How this affects species selection:
+I should prioritise D03 species that have clear chemical defence information and enough usable online images. Ideally, the pilot should include species from different defence categories, not only one type of defended species.
+==================================================
+
+Role in my project:
+D03 provides the core chemical defence dataset.
+
+Useful information to extract:
+- species
+- chemical defence class
+- toxicity / LD50
+- unpalatability / ED50
+- predator assay type
+- compound type
+- body part / extract type
+
+What D03 is useful for:
+D03 gives the biological response variables that I will later compare with image-derived traits.
+
+What D03 is not useful for:
+D03 is not the main image-analysis workflow reference.
+
+Notes:
+Need to be careful when converting D03 data to species-level data, because some species may have multiple extracts, body parts or assay results.
+
+==================================================
+D04 - van den Berg et al. 2024
+
+Role in my project:
+D04 is useful because it links chemical defence with colour-pattern traits in dorid nudibranchs. It shows what kinds of colour-pattern metrics may be biologically meaningful when comparing visual appearance with chemical defence.
+
+Main useful idea:
+Colour pattern should not be treated as one simple value. It is multidimensional and can include chromatic contrast, achromatic / luminance contrast, spatial patterning, pattern boldness and pattern variability.
+
+Image source:
+D04 used more controlled / standardised images than my project. My project uses citizen-science / online images, which are less standardised.
+
+Important difference from my project:
+D04 is useful as a reference for what visual traits to measure, but I should not directly copy the workflow. My images are not colour-calibrated, and James wants my workflow to be computational and automated.
+
+Useful ideas for my workflow:
+- Include colour metrics, not only brightness.
+- Include contrast metrics.
+- Include animal-only pattern metrics.
+- Consider pattern variability across images / individuals.
+- Consider using dimensionality reduction such as PCA if many visual metrics are correlated.
+
+Limitations for my project:
+Because my images come from iNaturalist / online sources, they have different cameras, lighting, white balance, angles, distances and backgrounds. Therefore, I should avoid interpreting absolute colour values as true biological colour.
+
+How my workflow should differ from D04:
+D04 can guide which visual traits are biologically relevant, but my project should use a fully automated Python workflow instead of relying on manual segmentation or specialised manual image processing.
+
+Planned adaptation:
+1. Use automated segmentation to identify the nudibranch.
+2. Extract animal-only colour and pattern metrics.
+3. Generate a background ring around the animal.
+4. Extract animal-background contrast metrics.
+5. Summarise metrics at image level and species level.
+6. Compare these image-derived traits with D03 chemical defence variables.
+==================================================
+
+Role in my project:
+Reference for colour-pattern metrics and the relationship between chemical defence and colour pattern.
+
+Things to check:
+- What image source did they use?
+- Was the image setup standardised or natural?
+- How did they separate animal from background?
+- What software did they use?
+- What colour / pattern metrics did they extract?
+- Did they use PCA or other dimensionality reduction?
+- What can I borrow?
+- What should I do differently?
+
+Notes:
+
+
+==================================================
+D05 - van den Berg, Endler & Cheney 2023
+
+Role in my project:
+D05 is useful because it clearly separates two visual concepts: detectability and boldness.
+
+Key idea:
+Detectability and boldness are not the same.
+
+Detectability:
+Detectability means how visually different the nudibranch is from its background. This depends on both the animal and the background. In my project, this corresponds to animal-background metrics.
+
+Boldness:
+Boldness means the strength of the animal's own internal colour pattern, without considering the background. In my project, this corresponds to animal-only metrics.
+
+Useful idea for my workflow:
+My automated workflow should not only measure animal-background contrast. It should produce two groups of variables:
+
+1. Animal-only metrics:
+- animal colour
+- animal brightness
+- animal saturation
+- animal internal colour variability
+- animal internal brightness variability
+- possible edge / texture / pattern metrics
+
+2. Animal-background metrics:
+- animal versus background brightness contrast
+- animal versus background saturation contrast
+- animal versus background colour difference
+- possible boundary contrast
+
+How this changes my project:
+My previous Fiji workflow mainly measured animal-background contrast. After reading D05, I should also include animal-only pattern metrics, because boldness and detectability are different visual traits.
+
+How my workflow should differ from D05:
+D05 used a more specialised visual ecology / QCPA-style workflow. My project should not simply replicate that. Instead, I should use the conceptual distinction between detectability and boldness, but implement it through an automated Python workflow for citizen-science images.
+
+Planned adaptation:
+1. Automatically segment the nudibranch.
+2. Use the animal mask to calculate animal-only metrics.
+3. Generate a surrounding background ring.
+4. Use the animal mask and background ring to calculate animal-background metrics.
+5. Compare both types of metrics with D03 toxicity / unpalatability / chemical defence class.
+==================================================
+
+Role in my project:
+Important conceptual reference for separating detectability and boldness.
+
+Key idea:
+Detectability and boldness are not the same.
+
+Detectability:
+Animal versus background.
+
+Boldness:
+Animal-only internal colour pattern.
+
+Things to check:
+- How did they define detectability?
+- How did they define boldness?
+- What image metrics did they use?
+- How did they use background?
+- What software / workflow did they use?
+- What can I borrow?
+- What should I do differently?
+
+Notes:
+
+
+==================================================
+D06 - van den Berg et al. 2024
+
+Role in my project:
+D06 may be useful as a reference for how previous studies treated habitat, background and visual metrics in nudibranch colour-pattern analysis.
+
+Current status:
+Need to read the Methods / Supplementary Methods in more detail.
+
+Things to check when reading:
+- What images did they use?
+- Were the images standardised or natural?
+- Did they analyse the animal, the background, or both?
+- How did they define habitat / background?
+- Did they manually select regions or use an automated method?
+- What software did they use?
+- What colour space or visual model did they use?
+- What visual metrics did they extract?
+- Did they use PCA, NMDS or another dimensionality reduction method?
+- What parts can inform my automated background-ring method?
+
+Possible relevance to my workflow:
+D06 may help me decide how to define and measure background information. This is important because my project needs to compare animal-only traits with animal-background contrast traits.
+
+How my workflow should differ:
+Even if D06 uses manual or specialised image analysis, my project should adapt the useful ideas into a Python-based automated workflow for citizen-science images.
+
+Notes after reading:
+To be completed after reading D06 methods.
+==================================================
+
+Role in my project:
+Possible reference for habitat / background visual metrics.
+
+Things to check:
+- How did they define habitat or background?
+- Did they measure background separately?
+- What visual metrics did they extract?
+- What software did they use?
+- What can I borrow for my background-ring method?
+
+Notes:
+
+
+==================================================
+My workflow idea after reading these papers
+==================================================
+
+Manual Fiji workflow:
+Used only as pilot / validation baseline.
+
+Final intended workflow:
+1. Input citizen-science image.
+2. Automatically segment nudibranch from background.
+3. Create animal mask.
+4. Create surrounding background ring by dilating animal mask and subtracting animal mask.
+5. Extract animal-only metrics.
+6. Extract background metrics.
+7. Extract animal-background contrast metrics.
+8. Save image-level CSV.
+9. Summarise species-level CSV.
+10. Compare with D03 toxicity / unpalatability / chemical defence class.
+
+Possible Python tools:
+- OpenCV
+- scikit-image
+- Segment Anything / SAM / SAM2
+- Cellpose
+- ilastik

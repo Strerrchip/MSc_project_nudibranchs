@@ -1,0 +1,6 @@
+species,image_id,n_candidate_masks,selected_candidate,selected_score,selected_area_fraction,selected_mean_brightness,selected_mean_saturation,notes
+Aphelodoris varia,Aphelodoris_varia_img01,29,0,142567.652,0.293,199.914,95.448,SAM pale-score segmentation test
+Aphelodoris varia,Aphelodoris_varia_img02,32,2,107912.413,0.187,172.383,107.361,SAM pale-score segmentation test
+Doriprismatica atromarginata,Doriprismatica_atromarginata_img01,28,0,158641.483,0.281,192.401,56.115,SAM pale-score segmentation test
+Doriprismatica atromarginata,Doriprismatica_atromarginata_img02,50,2,136106.938,0.095,168.774,54.166,SAM pale-score segmentation test
+Doriprismatica atromarginata,Doriprismatica_atromarginata_img03,95,2,157776.934,0.092,184.208,43.844,SAM pale-score segmentation test

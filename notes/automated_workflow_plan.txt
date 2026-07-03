@@ -1,0 +1,124 @@
+Automated image-analysis workflow plan
+
+Project aim
+
+My project uses D03 toxicity, unpalatability and chemical defence data as the main biological dataset. I want to develop an automated image-analysis workflow to extract colour, pattern and animal-background contrast traits from citizen-science images of dorid nudibranchs.
+
+Reason for changing the workflow
+
+The Fiji workflow was useful as a pilot, because it helped me understand what measurements I could extract from the images. However, it required manual ROI drawing and manual measurements. Since this is a Computational Methods project, the final workflow should be more automated and reproducible.
+
+Role of the manual Fiji data
+
+The manual Fiji measurements will not be the final method. I will keep them as a small validation or comparison dataset. They can be used to check whether the automated measurements give similar results.
+
+Planned automated workflow
+
+1. Read images from the species folders.
+2. Automatically separate the nudibranch from the background.
+3. Create an animal mask.
+4. Create a surrounding background ring by expanding the animal mask and subtracting the animal area.
+5. Extract animal-only colour and pattern metrics.
+6. Extract background metrics from the surrounding background ring.
+7. Calculate animal-background contrast metrics.
+8. Save image-level results to a CSV file.
+9. Summarise image-level results at species level.
+10. Compare species-level image traits with D03 chemical defence variables.
+
+Background definition
+
+The background will be defined as a ring around the animal, rather than a separate manually selected area.
+
+The idea is:
+
+background ring = expanded animal mask - animal mask
+
+This should make the background choice more consistent, because the background pixels are taken from close to the animal boundary.
+
+Possible segmentation methods to test
+
+I will first test methods that can automatically segment the animal from the image. Possible options include:
+
+* OpenCV or scikit-image methods
+* colour clustering
+* edge-based segmentation
+* Segment Anything / SAM or SAM2
+* Cellpose or ilastik if useful
+
+The most promising option may be to use a general segmentation model such as SAM/SAM2 to produce candidate masks, and then use Python rules to select the most likely nudibranch mask.
+
+Possible animal-only metrics
+
+These describe the animal itself. They are related to the idea of boldness from D05.
+
+Examples:
+
+* animal area
+* animal RGB mean values
+* animal brightness mean
+* animal brightness variation
+* animal saturation mean
+* animal saturation variation
+* colour variation within the animal
+* possible edge or texture metrics
+
+Possible animal-background metrics
+
+These describe how different the animal is from the nearby background. They are related to the idea of detectability from D05.
+
+Examples:
+
+* RGB contrast
+* brightness contrast
+* saturation contrast
+* colour distance between animal and background
+* possible boundary contrast
+
+Outputs
+
+For each image, I want to save:
+
+* animal mask
+* background ring
+* QC figure showing the original image, animal mask and background ring
+* image-level metric row in a CSV file
+
+Suggested output folders:
+
+processed_data/automated_image_analysis/masks/
+processed_data/automated_image_analysis/background_rings/
+processed_data/automated_image_analysis/qc_figures/
+processed_data/automated_image_analysis/image_metrics/
+processed_data/automated_image_analysis/validation/
+
+Validation
+
+I will compare the automated outputs with the existing manual Fiji measurements for a small number of images.
+
+Possible comparisons:
+
+* manual brightness contrast vs automated brightness contrast
+* manual saturation contrast vs automated saturation contrast
+* manual RGB contrast vs automated RGB contrast
+* qualitative comparison between manual ROI and automated mask
+
+This will help me check whether the automated workflow is reasonable.
+
+Connection with D03
+
+After extracting image traits, I will summarise them at species level and merge them with D03 variables, such as:
+
+* chemical defence class
+* toxicity / LD50
+* unpalatability / ED50
+* compound type
+
+Then I can explore whether animal-only traits and animal-background traits are related to toxicity, unpalatability or chemical defence class.
+
+Important limitation
+
+Citizen-science images are not colour-calibrated. Therefore, I should be careful when interpreting absolute colour values. The main focus should be on relative image-derived traits, especially within-image animal-background contrast and animal-only pattern variation.
+
+Next immediate step
+
+Test automatic segmentation on a small set of images that already have manual Fiji measurements.
