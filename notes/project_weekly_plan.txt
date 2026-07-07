@@ -1,0 +1,172 @@
+Project week-by-week plan
+
+Current date: 6 July
+Approximate project end date: around 20 August
+Approximate time remaining: about 7 weeks
+
+Main project aim:
+This project studies whether colour and pattern traits in dorid nudibranchs are related to toxicity, unpalatability and chemical defence.
+
+The colour and pattern traits will be extracted from online citizen-science images using an automated Python image-analysis workflow.
+
+The use of online citizen-science images is also an important method issue in this project. However, the main biological question is about the relationship between colour/pattern traits and defence traits.
+
+
+Week 1: 6 July - 12 July
+
+Main aim:
+Update the automated image-analysis pipeline and start moving from pilot images to the full set of 30 D03 species.
+
+Tasks:
+- Make a short week-by-week project plan.
+- Update the SAM workflow so that image scale is standardised using animal mask perimeter.
+- Change the surrounding background ring to 120 px.
+- Test the updated workflow on the five pilot images.
+- Check the new QC figures to see whether the animal mask and background ring are reasonable.
+- Start downloading and recording online citizen-science images for the 30 D03 species.
+- If the pilot test works, run the updated workflow on the first batch of species.
+
+Expected outputs by the end of the week:
+- An updated pipeline that works on the five pilot images.
+- QC figures with perimeter scaling and a 120 px background ring.
+- The start of the full image collection for the 30 species.
+- An initial image inventory.
+- The first batch of species ready for pipeline testing.
+
+
+Week 2: 13 July - 19 July
+
+Main aim:
+Complete image collection for the 30 D03 species and start organising the Introduction.
+
+Tasks:
+- Download online citizen-science images for the remaining D03 species.
+- Try to collect 10 candidate images for each species.
+- After QC, aim to keep at least 3-5 usable images per species.
+- Record image information in the image inventory.
+- Mark each image as usable, acceptable or unusable.
+- Record reasons for excluding images, such as blur, small animal size, unnatural background or strong obstruction.
+- Start organising the structure and paper notes for the Introduction.
+
+Expected outputs by the end of the week:
+- Most or all images collected for the 30 species.
+- Around 10 candidate images for each species where possible.
+- Basic inventory records for each image.
+- A clear list of species that still need more images.
+- An Introduction outline.
+- The image collection part of the Methods started.
+
+
+Week 3: 20 July - 26 July
+
+Main aim:
+Run the SAM pipeline on the full image set, check QC outputs, and start writing the Introduction and Methods.
+
+Tasks:
+- Run the automated SAM pipeline on images from the 30 species.
+- Generate animal masks.
+- Generate 120 px background rings.
+- Generate QC figures.
+- Check the QC figures manually.
+- Mark each segmentation result as good, acceptable or bad.
+- Remove or replace images with failed masks.
+- Keep at least 3-5 good or acceptable images per species.
+- Start writing the Introduction draft.
+- Start writing the Methods sections on data sources and image processing.
+
+Expected outputs by the end of the week:
+- SAM QC figures for most images.
+- At least 3-5 good or acceptable images for each species.
+- A QC record showing which images worked and which images failed.
+- Part of the Introduction draft.
+- Methods sections started for:
+  - D03 defence data
+  - online citizen-science image collection
+  - image usability criteria
+  - SAM segmentation
+  - image scale standardisation
+  - background ring generation
+
+
+Week 4: 27 July - 2 August
+
+Main aim:
+Extract image measurements, create species-level summaries, and continue writing Methods and Results.
+
+Tasks:
+- Extract image-level colour, pattern and contrast metrics from images that passed QC.
+- Extract animal-only traits.
+- Extract animal-background contrast traits.
+- Summarise image-level metrics to species-level metrics.
+- Check missing values and unusual outliers.
+- Make initial plots of visual trait distributions.
+- Continue writing the Methods, especially the measurement extraction section.
+- Start building the Results section structure.
+
+Expected outputs by the end of the week:
+- Image-level metrics CSV.
+- Species-level metrics CSV.
+- Initial plots of image traits.
+- A mostly complete Methods draft.
+- A basic Results structure.
+
+
+Week 5: 3 August - 9 August
+
+Main aim:
+Connect image traits with D03 toxicity, unpalatability and chemical defence data, and complete the main analysis.
+
+Tasks:
+- Merge species-level image metrics with the D03 defence dataset.
+- Check species name matching.
+- Run PCA or a similar exploratory analysis on the image traits.
+- Check whether PCA axes or main visual metrics are related to toxicity, unpalatability or chemical defence.
+- Run simple hypothesis tests.
+- Make the main result figures.
+- Write the Results draft.
+
+Expected outputs by the end of the week:
+- A merged species-level dataset.
+- PCA or similar analysis results.
+- Main result figures.
+- Initial hypothesis test results.
+- A mostly complete Results section.
+
+
+Week 6: 10 August - 16 August
+
+Main aim:
+Complete the main dissertation draft, especially the Discussion.
+
+Tasks:
+- Complete the Introduction draft.
+- Complete the Methods draft.
+- Complete the Results draft.
+- Write the Discussion draft.
+- Add figures and figure captions.
+- Check that the code and data workflow are clearly described in the Methods.
+- Organise references.
+- Check that the dissertation has a clear overall logic.
+
+Expected outputs by the end of the week:
+- A full dissertation draft.
+- Main figures and captions.
+- Complete Methods, Results and Discussion sections.
+- Only editing, proofreading and formatting left.
+
+
+Week 7: 17 August - 20 August
+
+Main aim:
+Final editing, formatting and submission.
+
+Tasks:
+- Final check of figures and tables.
+- Check references.
+- Check formatting.
+- Read the full dissertation and improve clarity.
+- Check that the Methods are clear enough for the workflow to be understood.
+- Check that code, notes and processed outputs are organised.
+- Export the final PDF.
+- Prepare for submission.
+

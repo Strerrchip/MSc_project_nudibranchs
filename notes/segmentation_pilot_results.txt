@@ -161,3 +161,39 @@ This is only a small pilot test. The current values should not be treated as fin
 
 Current conclusion:
 SAM pale-score segmentation is the current main automated segmentation method. GrabCut remains useful as a simple baseline, but SAM produced better animal masks for the pilot images.
+
+Scaled ring120 pilot metrics
+
+I updated the SAM pilot workflow to include animal perimeter standardisation and a 120 px surrounding background ring. The workflow now saves the scaled image, animal mask, background ring, QC figure and validation summary for each pilot image.
+
+Image-level output:
+processed_data/automated_image_analysis/image_metrics/sam_scaled_ring120_image_metrics_pilot.csv
+
+Species-level output:
+processed_data/automated_image_analysis/image_metrics/sam_scaled_ring120_species_metrics_pilot.csv
+
+Current species-level pilot summary:
+
+Aphelodoris varia:
+- n_images = 2
+- mean gray contrast = 70.663
+- mean brightness contrast = 71.797
+- mean saturation contrast = -57.761
+- mean Lab colour distance = 71.206
+- mean animal edge density = 0.199
+
+Doriprismatica atromarginata:
+- n_images = 3
+- mean gray contrast = 104.092
+- mean brightness contrast = 88.658
+- mean saturation contrast = -114.124
+- mean Lab colour distance = 106.396
+- mean animal edge density = 0.086
+
+Initial interpretation:
+In this small pilot set, Doriprismatica atromarginata showed stronger animal-background contrast than Aphelodoris varia. This was shown by higher gray contrast, brightness contrast and Lab colour distance. Its saturation contrast was also more negative, which is consistent with a pale animal against a more saturated background.
+
+Aphelodoris varia showed higher animal edge density. This may reflect stronger internal spotting or texture within the animal region.
+
+Important limitation:
+These values are only from five pilot images. They should not be treated as final biological results. The main result is that the updated SAM workflow can now standardise animal perimeter, generate a 120 px background ring, save scaled images and extract image-level and species-level colour/pattern metrics.
