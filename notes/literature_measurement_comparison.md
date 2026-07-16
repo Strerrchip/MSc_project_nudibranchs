@@ -181,3 +181,207 @@ luminance_edge_cv_difference
 = absolute difference between animal_luminance_edge_cv
   and background_luminance_edge_cv
  ```
+
+ ---
+
+## D06 – Highly defended nudibranchs “escape” to visually distinct background habitats
+
+Paper: van den Berg, Santon, Endler and Cheney (2024)
+
+This paper focuses on the visual properties of the natural backgrounds where nudibranchs were found.
+
+Unlike D05, it does not mainly calculate the difference between each animal and its background. Instead, it analyses the background region itself and asks whether species with different chemical defences occur on visually different or more variable backgrounds.
+
+The study tested part of the “escape and radiate” hypothesis. This hypothesis suggests that chemically defended species may be less dependent on matching one specific background and may therefore use a wider range of habitats.
+
+## Images and background selection
+
+The study analysed calibrated photographs of 184 individuals from 12 dorid nudibranch species.
+
+The animal and its background were manually separated. The background region was drawn around the area immediately surrounding each animal.
+
+Out-of-focus areas and areas containing strong shadows from artificial lighting were excluded from the background region.
+
+The images were analysed using the visual system of a triggerfish at two viewing distances:
+
+- 2 cm
+- 30 cm
+
+The 2 cm distance represented a close predator encounter. The 30 cm distance represented a greater viewing distance where fine spatial details would be less visible.
+
+## Background measurements
+
+The study used QCPA to calculate 157 colour-pattern statistics for each background.
+
+These measurements came from four analysis groups:
+
+- Colour Adjacency Analysis (CAA)
+- Visual Contrast Analysis (VCA)
+- Boundary Strength Analysis (BSA)
+- Local Edge Intensity Analysis (LEIA)
+
+The 157 measurements were filtered to remove strongly correlated variables. Seventeen measurements were retained for the factor analysis.
+
+The retained measurements were:
+
+- `BSA.BCVL.Hrz`
+- `BSA.BCVSsat.Hrz`
+- `BSA.BML.Vrt`
+- `BSA.BMS.Hrz`
+- `BSA.BsSsat.Hrz`
+- `CAA.Asp`
+- `CAA.PT`
+- `CAA.Qc.Vrt`
+- `CAA.Qt`
+- `Col.kurtosis`
+- `Col.mean.vrt`
+- `Lum.CoV`
+- `Lum.kurtosis.vrt`
+- `Lum.mean.vrt`
+- `VCA.CVS.Hrz`
+- `VCA.ML.Vrt`
+- `VCA.MSL.Vrt`
+
+The measurements ending in `Hrz` describe the horizontal direction. Measurements ending in `Vrt` describe the vertical direction.
+
+## Main types of background information
+
+| Background property | Example measurements in D06 | What does it describe? | Closest information in my workflow | Decision for my project |
+|---------------------|-----------------------------|-------------------------|------------------------------------|-------------------------|
+| Luminance edge contrast | `Lum.mean.vrt`, `VCA.ML.Vrt`, `VCA.MSL.Vrt`, `BSA.BML.Vrt` | The strength of brightness differences and brightness boundaries in the background | The 120 px ring is already used for brightness measurements, but background edge strength should be checked separately | Consider a simple background luminance-edge measurement |
+| Chromatic edge contrast | `Col.mean.vrt`, `BSA.BMS.Hrz`, `BSA.BsSsat.Hrz` | The strength of colour or saturation differences in the background | Background colour contributes to `saturation_contrast` and `lab_colour_distance` | Retain the existing simple colour measurements |
+| Contrast variability | `Lum.CoV`, `Lum.kurtosis.vrt`, `Col.kurtosis`, `BSA.BCVL.Hrz`, `BSA.BCVSsat.Hrz`, `VCA.CVS.Hrz` | Whether edge contrast is consistent or highly variable across the background | No confirmed direct equivalent as a separate background output | Consider simple background variation measurements |
+| Patch size and direction | `CAA.PT`, `CAA.Asp` | The typical size and orientation of background colour patches | Not implemented | Not a priority |
+| Pattern evenness and transitions | `CAA.Qc.Vrt`, `CAA.Qt` | How evenly colours are distributed and how regularly colour patches change | Not implemented | Not a priority |
+
+## Factors identified in D06
+
+The 17 measurements were reduced to four factors. Together, the four factors explained 39% of the variation in the backgrounds.
+
+### Factor 1: overall background colour and luminance contrast
+
+Factor 1 was mainly associated with luminance edge contrast, chromatic edge contrast, contrast variability and patch-size information.
+
+This was the only factor that showed a clear difference between the backgrounds of defended and undefended species.
+
+Chemically defended species were found on backgrounds with greater chromatic and achromatic contrast than undefended species.
+
+This difference was present at both 2 cm and 30 cm.
+
+However, the backgrounds of moderately defended and highly defended species were not clearly different from each other.
+
+### Factor 2: contrast between patches and background evenness
+
+Factor 2 represented stronger luminance and saturation contrast between background patches together with lower background evenness.
+
+There was no clear difference in Factor 2 between chemical-defence groups.
+
+Factor 2 changed with viewing distance, but this change was similar across the different defence groups.
+
+### Factor 3: variability and pattern regularity
+
+Factor 3 represented increased variability in luminance and colour contrast together with reduced average pattern regularity.
+
+There was no clear difference in Factor 3 between chemical-defence groups.
+
+### Factor 4: patch contrast and boundary contrast
+
+Factor 4 represented relationships between achromatic patch contrast, achromatic boundary contrast and chromatic boundary variability.
+
+There was no clear difference in Factor 4 between chemical-defence groups.
+
+## Main findings from D06
+
+Chemically defended nudibranch species occurred on backgrounds that were visually different from the backgrounds of undefended species.
+
+The clearest difference was that the backgrounds of defended species had greater colour and luminance contrast.
+
+This difference remained visible at both close and greater viewing distances.
+
+However, the study did not find evidence that defended species occurred on a more variable range of backgrounds.
+
+This means that defended species were associated with different background properties, but not necessarily with greater background diversity.
+
+The strength of chemical defence also did not show a simple gradual relationship with background appearance. Moderately defended and highly defended species often had similar background properties.
+
+## Relationship with my 120 px background ring
+
+My workflow uses a fixed 120 px ring around the segmented animal.
+
+This is conceptually similar to D06 because both methods aim to measure the immediate visual background surrounding the animal.
+
+However, the methods are not identical.
+
+D06 manually selected the background region and excluded:
+
+- out-of-focus areas;
+- excessive shadows;
+- unsuitable parts of the photograph.
+
+My method automatically uses a fixed-width ring. It may therefore include unsuitable background pixels unless the image passes visual quality control.
+
+D06 also used calibrated photographs, triggerfish visual modelling, colour clustering and viewing-distance modelling. My workflow uses uncalibrated citizen-science images and simpler computer-vision measurements.
+
+The 120 px ring should therefore be described as a standardised local background sample, not as an exact reproduction of the D06 background method.
+
+## Background measurements relevant to my project
+
+My current workflow already uses the background ring when calculating:
+
+- `gray_contrast`
+- `brightness_contrast`
+- `saturation_contrast`
+- `lab_colour_distance`
+
+These measurements compare the animal with its background.
+
+D06 shows that the visual properties of the background may also be biologically relevant by themselves.
+
+The next code review should check whether the following background-only measurements are already saved as separate variables:
+
+- mean background brightness;
+- variation in background brightness;
+- mean background saturation;
+- variation in background saturation;
+- background edge density.
+
+The following simple background measurements may be useful if they are not already included:
+
+- `background_brightness_sd`
+- `background_saturation_sd`
+- `background_edge_density`
+- `background_mean_luminance_edge_strength`
+
+The D05 candidate measurement should also be retained for testing:
+
+- `background_luminance_edge_cv`
+
+These measurements would provide simple information about background contrast and complexity without attempting to reproduce the complete QCPA method.
+
+## Measurements not selected at this stage
+
+I will not currently add the full CAA patch-geometry measurements.
+
+These include patch size, aspect ratio, colour evenness and transition regularity.
+
+They require reliable colour clustering of the background. Online images have variable lighting, compression, focus and colour balance, so background colour clustering may not be consistent.
+
+I will also not attempt to reproduce predator-specific chromatic contrast values from D06.
+
+The existing saturation and Lab-based measurements will be used as simpler colour descriptors, with their limitations stated clearly.
+
+## Current conclusion
+
+D06 shows that background appearance should not only be treated as a reference used to calculate animal-background contrast.
+
+The background can also be analysed as a set of visual traits.
+
+The strongest result from D06 was that chemically defended species occurred on backgrounds with greater luminance and colour contrast than undefended species.
+
+For my project, this supports retaining the 120 px background ring and saving a small number of background-only measurements.
+
+The most useful candidates are background brightness variation, saturation variation, edge density and luminance-edge strength.
+
+These should be checked and tested on the pilot images before the final measurement set is selected.
+
+My project should not claim that a fixed 120 px ring reproduces the manually selected and predator-modelled background regions used in D06.
