@@ -85,3 +85,99 @@ D04 shows that colour pattern boldness is not represented by one measurement. It
 My current workflow already covers animal-background contrast and some simple animal-only variation. The clearest possible additions are brightness CV, saturation CV and mean edge strength.
 
 Patch-based measurements could provide more information about pattern geometry, but they would add another processing step and may be less reliable with online images. I should test a simple colour-clustering method before deciding whether to include them.
+
+---
+
+## D05 – Signal detectability and boldness are not the same: the function of defensive coloration in nudibranchs is distance-dependent
+
+Paper: van den Berg, Endler and Cheney (2023)
+
+This paper separates detectability from boldness.
+
+Detectability describes how different the animal's local edge-contrast pattern is from its immediate background. Boldness describes the strength and variation of local edge contrast within the animal itself.
+
+The study analysed calibrated photographs of 226 individuals from 13 dorid nudibranch species. The images were modelled using the visual system of a triggerfish at viewing distances of 2, 5, 10 and 30 cm.
+
+The study used Local Edge Intensity Analysis (LEIA) to measure local achromatic and chromatic edge contrast. The main statistics were Lum.CoV and Col.CoV.
+
+| Measurement | Region used | What does it measure? | Closest measurement in my workflow | Decision |
+|-------------|-------------|-----------------------|------------------------------------|----------|
+| Achromatic detectability (Lum.CoV) | Animal value compared with background value | The absolute difference between the animal's Lum.CoV and the immediate background's Lum.CoV | No direct equivalent; conceptually closest: `brightness_contrast` | Consider adding a simplified luminance-edge comparison |
+| Chromatic detectability (Col.CoV) | Animal value compared with background value | The absolute difference between the animal's Col.CoV and the immediate background's Col.CoV | No direct equivalent; conceptually closest: `saturation_contrast` and `lab_colour_distance` | Keep the current colour measurements for now |
+| Achromatic boldness (Lum.CoV) | Animal only | The coefficient of variation of local luminance-edge contrast within the animal | No direct equivalent; related to `animal_brightness_sd` and `animal_edge_density` | Consider adding a simplified animal luminance-edge measurement |
+| Chromatic boldness (Col.CoV) | Animal only | The coefficient of variation of local chromatic edge contrast within the animal | No direct equivalent; conceptually related to `animal_saturation_sd` | Keep the current colour measurement for now |
+
+## Difference between detectability and boldness
+
+D05 used Lum.CoV and Col.CoV for both detectability and boldness, but the values were used differently.
+
+For boldness, the authors used the value calculated from the animal alone.
+
+For detectability, the authors calculated the absolute difference between the animal value and the value from its immediate background.
+
+Therefore:
+
+```text
+boldness
+= animal-only Lum.CoV or Col.CoV
+
+detectability
+= absolute difference between the animal value and the background value
+
+```
+
+## Comparison with my current workflow
+
+My current workflow already separates the animal from its immediate background using an animal mask and a 120 px background ring.
+
+### Current animal-background measurements
+
+- `gray_contrast`
+- `brightness_contrast`
+- `saturation_contrast`
+- `lab_colour_distance`
+
+These measurements compare average properties of the animal with average properties of the background.
+
+For example, `brightness_contrast` compares mean animal brightness with mean background brightness.
+
+D05 used a different approach. It compared the coefficient of variation of local edge contrast in the animal with the same measurement in the background.
+
+Therefore, my current animal-background measurements address a similar biological question, but they are not direct equivalents of D05 detectability.
+
+### Current animal-only measurements
+
+- `animal_brightness_mean`
+- `animal_saturation_mean`
+- `animal_brightness_sd`
+- `animal_saturation_sd`
+- `animal_gray_sd`
+- `animal_edge_density`
+
+These measurements describe brightness, colour variation and edge abundance within the animal.
+
+However, `animal_edge_density` only measures how many edge pixels are present. It does not measure how strong those edges are or how variable their contrast is.
+
+Therefore, my current animal-only measurements are related to D05 boldness, but they do not reproduce Lum.CoV or Col.CoV.
+
+## Candidate measurements suggested by D05
+
+D05 suggests that luminance-edge variation may be useful for separating boldness from detectability.
+
+Three simplified measurements could be tested:
+
+- `animal_luminance_edge_cv`
+- `background_luminance_edge_cv`
+- `luminance_edge_cv_difference`
+
+The animal value would describe luminance-edge variation within the animal.
+
+The background value would describe luminance-edge variation within the 120 px background ring.
+
+The difference value would compare the animal with its immediate background:
+
+```text
+luminance_edge_cv_difference
+= absolute difference between animal_luminance_edge_cv
+  and background_luminance_edge_cv
+ ```
