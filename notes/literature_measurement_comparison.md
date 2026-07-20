@@ -677,3 +677,13 @@ The following scripts have now been updated:
 The new chromatic-edge measurements were successfully calculated for all five pilot images. No missing metric values were found, and the new measurements were also successfully summarised at species level.
 
 The current pilot confirms that the updated measurement pipeline runs correctly. Biological interpretation will wait until more images and species have been processed.
+
+## Chromatic-edge quality control
+
+Chromatic-edge QC figures were generated for all five pilot images. The strongest chromatic edges generally followed visible colour-pattern boundaries within the animals, including dark outlines, mottled markings and detailed structures around the rhinophores and gills.
+
+The background measurements also highlighted visually complex reef and algal structures within the 120 px background ring. The chromatic-edge signal was not dominated by the animal silhouette or by the borders of the background ring, indicating that the two-pixel mask erosion was sufficient for the current pilot.
+
+The displayed heatmap ranges were calculated separately for each image using the 99th percentile. Therefore, the heatmap colours should only be used to inspect the spatial location of chromatic edges within each image, not to compare absolute edge strength among images. Numerical comparisons will use the exported image-level and species-level metrics.
+
+The five pilot images therefore passed the initial chromatic-edge quality check. The 17-metric main measurement set will now be retained without further modification unless a clear problem appears when more images are processed.
