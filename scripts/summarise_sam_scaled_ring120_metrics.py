@@ -67,9 +67,14 @@ ANIMAL_VARIATION_COLUMNS = [
     "animal_saturation_sd",
     "animal_brightness_sd",
     "animal_edge_density",
+
     "animal_luminance_edge_mean",
     "animal_luminance_edge_sd",
     "animal_luminance_edge_cv",
+
+    "animal_chromatic_edge_mean",
+    "animal_chromatic_edge_sd",
+    "animal_chromatic_edge_cv",
 ]
 
 
@@ -79,15 +84,21 @@ BACKGROUND_VARIATION_COLUMNS = [
     "background_saturation_sd",
     "background_brightness_sd",
     "background_edge_density",
+
     "background_luminance_edge_mean",
     "background_luminance_edge_sd",
     "background_luminance_edge_cv",
+
+    "background_chromatic_edge_mean",
+    "background_chromatic_edge_sd",
+    "background_chromatic_edge_cv",
 ]
 
 
-# Direct comparison between animal and background edge structure.
+# Direct comparisons between animal and background edge structure.
 EDGE_COMPARISON_COLUMNS = [
     "luminance_edge_cv_difference",
+    "chromatic_edge_cv_difference",
 ]
 
 
@@ -248,14 +259,23 @@ def main():
     preview_columns = [
         "species",
         "n_images",
+
         "mean_brightness_contrast_abs",
         "mean_saturation_contrast_abs",
         "mean_lab_colour_distance",
+
         "mean_animal_edge_density",
         "mean_background_edge_density",
+
         "mean_animal_luminance_edge_cv",
         "mean_background_luminance_edge_cv",
         "mean_luminance_edge_cv_difference",
+
+        "mean_animal_chromatic_edge_mean",
+        "mean_background_chromatic_edge_mean",
+        "mean_animal_chromatic_edge_cv",
+        "mean_background_chromatic_edge_cv",
+        "mean_chromatic_edge_cv_difference",
     ]
 
     print("\nPreview:")

@@ -1,5 +1,91 @@
 # Measurement notes from previous studies
 
+## D03 – Weapons or deterrents? Nudibranch molluscs use distinct ecological modes of chemical defence against predators
+
+Paper: Winters et al. (2022)
+
+D03 does not measure colour or pattern. It provides the chemical-defence data that are later compared with visual measurements in D04, D05 and D06.
+
+The study examined 462 individuals from 30 nudibranch species. It identified secondary metabolites and tested whether the extracts acted as feeding deterrents, toxins, or both.
+
+## Main D03 measurements
+
+| Measurement | Assay or source | What does it measure? | Interpretation | Use in my project |
+|-------------|-----------------|-----------------------|----------------|-------------------|
+| Natural extract concentration (`mg/ml`) | Chemical extraction | The naturally occurring concentration of crude extract in the animal tissue | Describes how much extract was present per unit tissue volume | Retain as supporting chemical information, but not as the main defence response |
+| Palaemon shrimp `ED50` | Antifeedant assay with *Palaemon serenus* | The volume of stock extract needed for 50% of shrimp to reject the food pellet | Lower values indicate stronger unpalatability | Main continuous unpalatability measurement because it has the broadest coverage and is used by D04–D06 |
+| Toadfish `ED50` | Antifeedant assay with *Tetractenos hamiltoni* | The extract volume needed for 50% rejection by toadfish | Lower values indicate stronger unpalatability | Keep as a secondary taxon-specific measurement |
+| Triggerfish `ED50` | Antifeedant assay with *Rhinecanthus aculeatus* | The extract volume needed for 50% rejection by triggerfish | Lower values indicate stronger unpalatability | Keep as a secondary taxon-specific measurement; coverage is more limited |
+| Brine shrimp `LD50` | Toxicity assay with *Artemia* sp. | The extract volume that caused 50% mortality after 24 hours | Lower values indicate stronger toxicity | Main continuous toxicity measurement |
+| Damselfish toxicity weighted mean (`WM`) | Previously published assay with *Chromis viridis* | Ordinal fish-toxicity score | 1 = negligible/non-toxic; 4 = highly toxic | Supporting measurement only because it is ordinal and available for fewer extracts |
+| Chemical compound identity and type | NMR, mass spectrometry and GC–MS | The secondary metabolites or compound groups present in the extract | Describes the chemical basis of the defence | Useful for biological interpretation, but not currently a main predictor |
+| Body part | Whole-body or mantle-only extract | Whether the assay used the complete animal or only mantle tissue | Mantle extracts can differ from whole-body extracts | Use whole-body values for the main between-species comparison |
+| Chemical-defence class | Combined toxicity and unpalatability evidence | Summary of the ecological mode of defence | `I & II`: highly toxic and unpalatable; `I`: highly toxic but weakly unpalatable; `II`: weakly toxic but highly unpalatable; `WR`: weak response; `NR`: no response | Keep as a categorical summary, but do not use it as a substitute for all continuous assay values |
+
+## Important data codes
+
+D03 contains several values that should not be treated as ordinary numbers:
+
+- `nr`: no response was observed in the assay;
+- `NA`: the extract was not tested, usually because extract or assay animals were unavailable;
+- `>1`: the response remained below 50% at the natural concentration;
+- `>highest tested volume`: a dose response was present, but the available extract was insufficient to reach a 50% response.
+
+These values represent different situations. They should not all be converted to the same missing value without recording their original meaning.
+
+## Multiple extracts and assay organisms
+
+Some species have several extracts, sampling locations or body parts. The same species can therefore have more than one ED50, LD50 or defence class.
+
+Responses also differed among assay organisms. D03 found no predictable overall relationship between toxicity and unpalatability, and some compound groups were much more unpalatable to shrimp than to fish.
+
+This means that I should not automatically combine all antifeedant assays into one value. Palaemon, toadfish and triggerfish ED50 values should remain separate in the cleaned data.
+
+## Relationship with D04–D06
+
+D04 and D06 used whole-body values to make species comparable. They mainly used:
+
+- Palaemon shrimp ED50 as the unpalatability measurement;
+- brine shrimp LD50 as the toxicity measurement;
+- defence categories derived from toxicity and unpalatability.
+
+They transformed the raw responses so that stronger defence had a larger value, for example `1 - ED50` and `1 - LD50`. This reverses the direction of the original D03 values, where a lower dose indicates a stronger effect.
+
+D05 used both the categorical defence classes and a continuous unpalatability value derived from Palaemon ED50.
+
+## Working decision for my project
+
+The current defence variables should remain separate from the image measurements.
+
+### Main defence variables
+
+- Palaemon shrimp ED50 for unpalatability;
+- brine shrimp LD50 for toxicity;
+- chemical-defence class as a categorical summary.
+
+### Secondary defence variables
+
+- toadfish ED50;
+- triggerfish ED50;
+- damselfish weighted toxicity;
+- natural extract concentration;
+- compound type.
+
+Before statistical analysis, I still need to decide how to handle:
+
+- multiple whole-body extracts from the same species;
+- censored values such as `>1`;
+- `nr` values;
+- species with assay data from only one defence modality;
+- whether to analyse raw ED50/LD50 or transformed defence-strength values.
+
+## Main conclusion from D03
+
+Toxicity and unpalatability are different components of chemical defence and should not be treated as interchangeable.
+
+D03 therefore supplies several possible defence variables rather than one universal defence score. The visual measurements from my image workflow should first be compared separately with unpalatability, toxicity and the categorical defence class.
+
+---
 ## D04 – Chemical defences indicate bold colour patterns with reduced variability in aposematic nudibranchs
 
 Paper: van den Berg et al. (2024)
@@ -385,3 +471,209 @@ The most useful candidates are background brightness variation, saturation varia
 These should be checked and tested on the pilot images before the final measurement set is selected.
 
 My project should not claim that a fixed 120 px ring reproduces the manually selected and predator-modelled background regions used in D06.
+
+---
+
+## Working measurement set after D04–D06
+
+The measurements below form the working set for the next stage of image analysis.
+
+This is not necessarily the final statistical variable set. After more images have been processed, strongly correlated measurements can be removed or combined using PCA.
+
+## 1. Animal-background measurements: detectability
+
+These measurements describe how different the animal is from its immediate 120 px background ring.
+
+| Metric | What it describes | Current status |
+|--------|-------------------|----------------|
+| `gray_contrast_abs` | Absolute difference in mean grayscale intensity between the animal and background | Keep as the main simple achromatic contrast measurement |
+| `saturation_contrast_abs` | Absolute difference in mean saturation between the animal and background | Keep as a simple colourfulness contrast measurement |
+| `lab_colour_distance` | Overall distance between the mean animal and background colours in CIELAB space | Keep as the main general colour-distance measurement |
+| `luminance_edge_cv_difference` | Difference in luminance-edge variation between the animal and background | Keep as a simplified edge-based detectability measurement |
+
+Signed versions of contrast measurements will remain in the image-level CSV because they show the direction of the difference. However, the absolute versions are more suitable for describing the magnitude of detectability.
+
+`brightness_contrast_abs` will also remain in the CSV, but it will not be treated as a main measurement at this stage because it is likely to contain similar information to `gray_contrast_abs`.
+
+## 2. Animal-only measurements: boldness and internal pattern
+
+These measurements describe variation and pattern structure within the animal mask.
+
+| Metric | What it describes | Current status |
+|--------|-------------------|----------------|
+| `animal_gray_sd` | Variation in grayscale intensity within the animal | Keep |
+| `animal_saturation_sd` | Variation in saturation within the animal | Keep |
+| `animal_edge_density` | Proportion of the animal region containing detected edges | Keep |
+| `animal_luminance_edge_cv` | Variation in luminance-edge strength within the animal | Keep as a simplified edge-based boldness measurement |
+
+`animal_brightness_sd` will remain in the CSV but will be treated as a secondary measurement because it is likely to be strongly related to `animal_gray_sd`.
+
+The edge measurements describe different properties:
+
+- `animal_edge_density` describes how many internal edges are present;
+- `animal_luminance_edge_cv` describes how variable the strengths of those edges are.
+
+## 3. Background-only measurements
+
+These measurements describe the visual properties of the immediate background itself.
+
+| Metric | What it describes | Current status |
+|--------|-------------------|----------------|
+| `background_gray_sd` | Variation in grayscale intensity within the background ring | Keep |
+| `background_saturation_sd` | Variation in saturation within the background ring | Keep |
+| `background_edge_density` | Proportion of the background ring containing detected edges | Keep |
+| `background_luminance_edge_cv` | Variation in luminance-edge strength within the background ring | Keep |
+
+`background_brightness_sd` will remain in the CSV but will be treated as a secondary measurement because it is likely to contain similar information to `background_gray_sd`.
+
+## 4. Quality-control and interpretation variables
+
+The following variables will remain in the output files but will not initially be treated as the main biological traits:
+
+- animal and background mean RGB values;
+- animal and background mean grayscale values;
+- animal and background mean saturation and brightness;
+- signed contrast values;
+- Lab channel means and signed differences;
+- luminance-edge means and standard deviations;
+- `animal_area_fraction`;
+- `background_ring_area_fraction`.
+
+These variables are useful for checking the images, interpreting unexpected results and identifying possible processing problems.
+
+## 5. Measurements not added at this stage
+
+I will not currently add:
+
+- colour-patch size;
+- patch aspect ratio;
+- colour-patch evenness;
+- colour-transition regularity;
+- predator-specific chromatic contrast;
+- multiple simulated viewing distances.
+
+Patch-based measurements require reliable colour clustering. This may not work consistently across citizen-science images with different lighting, colour balance, focus and compression.
+
+Predator-specific measurements used in D04, D05 and D06 also require calibrated photographs and visual modelling. My measurements should therefore be described as simpler image-based traits rather than direct reproductions of QCPA.
+
+## Current working decision
+
+The main working measurement set contains 12 variables:
+
+### Detectability
+
+- `gray_contrast_abs`
+- `saturation_contrast_abs`
+- `lab_colour_distance`
+- `luminance_edge_cv_difference`
+
+### Animal-only boldness and pattern
+
+- `animal_gray_sd`
+- `animal_saturation_sd`
+- `animal_edge_density`
+- `animal_luminance_edge_cv`
+
+### Background properties
+
+- `background_gray_sd`
+- `background_saturation_sd`
+- `background_edge_density`
+- `background_luminance_edge_cv`
+
+These variables will be used for the next image batch. After the dataset is larger, correlations among measurements will be checked before PCA or hypothesis testing.
+
+## Final measurement decision after the literature review
+
+The literature review showed that the current workflow already provides a useful simplified set of achromatic, colour and edge measurements. However, it previously measured luminance-edge variation without an equivalent chromatic-edge measurement.
+
+D05 calculated both achromatic and chromatic edge variation for the animal and its immediate background. D04 and D06 also included several chromatic contrast measurements. Therefore, chromatic-edge measurements were added to the current workflow.
+
+The updated workflow does not attempt to reproduce the full QCPA framework. The published studies used calibrated photographs, predator-specific visual modelling and multiple viewing distances, whereas the current project uses uncalibrated citizen-science images from different cameras and lighting conditions.
+
+### Final main measurement set
+
+#### 1. Animal–background detectability
+
+| Metric | What it measures |
+|---|---|
+| `gray_contrast_abs` | Absolute difference in mean grayscale intensity between the animal and background |
+| `saturation_contrast_abs` | Absolute difference in mean saturation between the animal and background |
+| `lab_colour_distance` | CIELAB colour distance between the mean animal and background colours |
+| `luminance_edge_cv_difference` | Difference in luminance-edge variation between the animal and background |
+| `chromatic_edge_cv_difference` | Difference in chromatic-edge variation between the animal and background |
+
+#### 2. Animal colour-pattern measurements
+
+| Metric | What it measures |
+|---|---|
+| `animal_gray_sd` | Grayscale variation within the animal |
+| `animal_saturation_sd` | Saturation variation within the animal |
+| `animal_edge_density` | Proportion of animal pixels classified as edges |
+| `animal_luminance_edge_cv` | Relative variation in luminance-edge strength within the animal |
+| `animal_chromatic_edge_mean` | Mean strength of local chromatic changes within the animal |
+| `animal_chromatic_edge_cv` | Relative variation in chromatic-edge strength within the animal |
+
+#### 3. Background measurements
+
+| Metric | What it measures |
+|---|---|
+| `background_gray_sd` | Grayscale variation within the immediate background ring |
+| `background_saturation_sd` | Saturation variation within the immediate background ring |
+| `background_edge_density` | Proportion of background pixels classified as edges |
+| `background_luminance_edge_cv` | Relative variation in luminance-edge strength within the background |
+| `background_chromatic_edge_mean` | Mean strength of local chromatic changes within the background |
+| `background_chromatic_edge_cv` | Relative variation in chromatic-edge strength within the background |
+
+The final main set therefore contains 17 image measurements.
+
+### Auxiliary measurements
+
+The following measurements are still exported but are not currently included in the main biological set:
+
+- `animal_chromatic_edge_sd`
+- `background_chromatic_edge_sd`
+- luminance-edge means and standard deviations
+- signed animal–background contrasts
+- RGB channel means and standard deviations
+- brightness means and standard deviations
+- mask area and scaling quality-control variables
+
+These variables can be used for interpretation, quality control or later correlation checks.
+
+### Measurements deferred for pilot testing
+
+D04 and D06 included several patch-based measurements, particularly:
+
+- average patch size (`CAA.PT`);
+- pattern aspect ratio (`CAA.Asp`);
+- relative colour diversity or evenness (`CAA.Qc`);
+- relative transition diversity or regularity (`CAA.Qt`).
+
+These measurements require the image to be divided into discrete colour patches. This may be unstable in citizen-science images because lighting, shadows, reflections, image compression and camera settings differ among observations.
+
+Patch-based measurements will therefore be tested on a small pilot set before any are added to the main workflow.
+
+### Measurements not reproduced
+
+The current workflow will not directly reproduce:
+
+- predator-specific receptor-noise-limited colour measurements;
+- absolute QCPA or LEIA values based on calibrated images;
+- simulations at 2, 5, 10 and 30 cm viewing distances;
+- separate horizontal and vertical versions of every metric;
+- the complete set of 157 QCPA outputs;
+- edge skewness and kurtosis as main measurements.
+
+These measurements would either require calibrated photographs and predator-vision information or would add many highly correlated variables without a clear benefit to the main research question.
+
+### Implementation update
+
+The following scripts have now been updated:
+
+- `extract_sam_scaled_ring120_metrics.py`
+- `summarise_sam_scaled_ring120_metrics.py`
+
+The new chromatic-edge measurements were successfully calculated for all five pilot images. No missing metric values were found, and the new measurements were also successfully summarised at species level.
+
+The current pilot confirms that the updated measurement pipeline runs correctly. Biological interpretation will wait until more images and species have been processed.

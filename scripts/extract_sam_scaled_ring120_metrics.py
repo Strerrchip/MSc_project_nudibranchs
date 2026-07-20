@@ -211,6 +211,94 @@ def calculate_luminance_edge_metrics(lightness_image, region_mask):
     return edge_mean, edge_sd, edge_cv
 
 
+def calculate_chromatic_edge_metrics(
+    lab_a_image,
+    lab_b_image,
+    region_mask,
+):
+    """
+    Calculate simplified chromatic-edge measurements inside a region.
+
+    CIELAB a* and b* are used as two opponent-colour channels.
+    Sobel gradients are calculated for both channels and combined as:
+
+        sqrt(
+            da_dx^2 + da_dy^2
+            + db_dx^2 + db_dy^2
+        )
+
+    This describes the strength of local colour changes while reducing
+    the influence of light-dark changes already measured with L*.
+
+    It is inspired by the chromatic edge measurements in D04-D06,
+    but it does not reproduce QCPA, LEIA or predator visual modelling.
+
+    Returns:
+        mean chromatic-edge strength
+        standard deviation of chromatic-edge strength
+        coefficient of variation of chromatic-edge strength
+    """
+    internal_mask = erode_region_mask(region_mask)
+
+    if np.sum(internal_mask) == 0:
+        return np.nan, np.nan, np.nan
+
+    lab_a_float = lab_a_image.astype(np.float32)
+    lab_b_float = lab_b_image.astype(np.float32)
+
+    a_gradient_x = cv2.Sobel(
+        lab_a_float,
+        cv2.CV_32F,
+        1,
+        0,
+        ksize=3,
+    )
+    a_gradient_y = cv2.Sobel(
+        lab_a_float,
+        cv2.CV_32F,
+        0,
+        1,
+        ksize=3,
+    )
+
+    b_gradient_x = cv2.Sobel(
+        lab_b_float,
+        cv2.CV_32F,
+        1,
+        0,
+        ksize=3,
+    )
+    b_gradient_y = cv2.Sobel(
+        lab_b_float,
+        cv2.CV_32F,
+        0,
+        1,
+        ksize=3,
+    )
+
+    chromatic_gradient_magnitude = np.sqrt(
+        a_gradient_x ** 2
+        + a_gradient_y ** 2
+        + b_gradient_x ** 2
+        + b_gradient_y ** 2
+    )
+
+    region_values = chromatic_gradient_magnitude[internal_mask]
+
+    if region_values.size == 0:
+        return np.nan, np.nan, np.nan
+
+    edge_mean = float(np.mean(region_values))
+    edge_sd = float(np.std(region_values))
+
+    if edge_mean <= CV_EPSILON:
+        edge_cv = np.nan
+    else:
+        edge_cv = float(edge_sd / edge_mean)
+
+    return edge_mean, edge_sd, edge_cv
+
+
 # =========================
 # Validation functions
 # =========================
@@ -549,6 +637,43 @@ def main():
             )
 
         # -------------------------
+        # Simplified chromatic-edge measurements
+        # -------------------------
+
+        (
+            animal_chromatic_edge_mean,
+            animal_chromatic_edge_sd,
+            animal_chromatic_edge_cv,
+        ) = calculate_chromatic_edge_metrics(
+            lab_a,
+            lab_b,
+            animal_mask,
+        )
+
+        (
+            background_chromatic_edge_mean,
+            background_chromatic_edge_sd,
+            background_chromatic_edge_cv,
+        ) = calculate_chromatic_edge_metrics(
+            lab_a,
+            lab_b,
+            background_ring,
+        )
+
+        if (
+            np.isnan(animal_chromatic_edge_cv)
+            or np.isnan(background_chromatic_edge_cv)
+        ):
+            chromatic_edge_cv_difference = np.nan
+        else:
+            chromatic_edge_cv_difference = float(
+                abs(
+                    animal_chromatic_edge_cv
+                    - background_chromatic_edge_cv
+                )
+            )
+
+        # -------------------------
         # Save one row per image
         # -------------------------
 
@@ -657,6 +782,30 @@ def main():
                 "luminance_edge_cv_difference": (
                     luminance_edge_cv_difference
                 ),
+
+                "animal_chromatic_edge_mean": (
+                    animal_chromatic_edge_mean
+                ),
+                "animal_chromatic_edge_sd": (
+                    animal_chromatic_edge_sd
+                ),
+                "animal_chromatic_edge_cv": (
+                    animal_chromatic_edge_cv
+                ),
+
+                "background_chromatic_edge_mean": (
+                    background_chromatic_edge_mean
+                ),
+                "background_chromatic_edge_sd": (
+                    background_chromatic_edge_sd
+                ),
+                "background_chromatic_edge_cv": (
+                    background_chromatic_edge_cv
+                ),
+
+                "chromatic_edge_cv_difference": (
+                    chromatic_edge_cv_difference
+                ),
             }
         )
 
@@ -680,6 +829,11 @@ def main():
         "animal_luminance_edge_cv",
         "background_luminance_edge_cv",
         "luminance_edge_cv_difference",
+        "animal_chromatic_edge_mean",
+        "background_chromatic_edge_mean",
+        "animal_chromatic_edge_cv",
+        "background_chromatic_edge_cv",
+        "chromatic_edge_cv_difference",
     ]
 
     print("\nPreview:")
