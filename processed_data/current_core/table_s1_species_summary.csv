@@ -1,4 +1,4 @@
-﻿species,species_original,family,authority,body_part,chemical_defence_class,unpalatability_ps_ed50,unpalatability_tf_ed50,unpalatability_extra,toxicity_ed50,toxicity_extra,number_of_individuals,collection_location,coordinates,source_dataset
+﻿species,species_original,family,authority,body_part,chemical_defence_class,unpalatability_ps_ed50,unpalatability_tf_ed50,unpalatability_trf_ed50,toxicity_bs_ld50,toxicity_df_wm,number_of_individuals,collection_location,coordinates,source_dataset
 Aphelodoris varia,Aphelodoris varia,Dorididae,"Abraham, 1877",WB,NR; WR/NR,nr,,> 1,nr,1,7.0,"Nelson Bay, NSW; Sydney, NSW",32o72’S; 152o15’E; 34o04’S; 151o09’E,chemical_defence_modes_Table_S1_species_summary
 Ardeadoris egretta,Ardeadoris egretta (1); Ardeadoris egretta (2),Chromodorididae,"Rudman, 1984",M; WB,WR,0.65; > 1,> 1,,> 1,,4.0,"GBR, supplied by Cairns Marine Ltd. Stratford, QLD; Lizard Island, GBR",14°40’S; 145°28’E,chemical_defence_modes_Table_S1_species_summary
 Ardeadoris rubroannulata,Ardeadoris rubroannulata,Chromodorididae,"Rudman, 1986",WB,I&II,0.083,,,0.0007,,2.0,"Mooloolaba, SE QLD",26°40’S; 153°07’E,chemical_defence_modes_Table_S1_species_summary

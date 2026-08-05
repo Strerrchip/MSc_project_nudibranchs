@@ -1,4 +1,4 @@
-﻿species,family,chemical_defence_class,unpalatability_ps_ed50,unpalatability_tf_ed50,toxicity_ed50,image_collection_priority,image_search_status,n_images_found,n_usable_images,image_sources_checked,image_collection_notes,ott,gbif,worms,wikidata,popularity,popularity_rank,taxonomy_match_status
+﻿species,family,chemical_defence_class,unpalatability_ps_ed50,unpalatability_tf_ed50,toxicity_bs_ld50,image_collection_priority,image_search_status,n_images_found,n_usable_images,image_sources_checked,image_collection_notes,ott,gbif,worms,wikidata,popularity,popularity_rank,taxonomy_match_status
 Aphelodoris varia,Dorididae,NR; WR/NR,nr,,nr,pilot,not_started,0,0,,,2875755.0,4596633.0,533945.0,3620603.0,106508.75,1228441.0,matched
 Doriprismatica atromarginata,Chromodorididae,I&II,0.15; 0.37,0.07,0.07,pilot,not_started,0,0,,,5871.0,6519570.0,558499.0,1115231.0,106746.58,1227624.0,matched
 Hypselodoris bennetti,Chromodorididae,I&II,0.27,,0.12,pilot,not_started,0,0,,,795081.0,4596900.0,458669.0,3787986.0,107077.88,1227353.0,matched

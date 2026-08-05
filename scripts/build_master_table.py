@@ -260,9 +260,9 @@ table_s1.columns = [
     "natural_concentration_mg_ml",
     "unpalatability_ps_ed50",
     "unpalatability_tf_ed50",
-    "unpalatability_extra",
-    "toxicity_ed50",
-    "toxicity_extra",
+    "unpalatability_trf_ed50",
+    "toxicity_bs_ld50",
+    "toxicity_df_wm",
     "chemical_defence_class",
     "number_of_individuals",
     "mean_size_mm_st_dev",
@@ -305,9 +305,9 @@ table_s1_cleaned = table_s1[[
     "natural_concentration_mg_ml",
     "unpalatability_ps_ed50",
     "unpalatability_tf_ed50",
-    "unpalatability_extra",
-    "toxicity_ed50",
-    "toxicity_extra",
+    "unpalatability_trf_ed50",
+    "toxicity_bs_ld50",
+    "toxicity_df_wm",
     "chemical_defence_class",
     "number_of_individuals",
     "mean_size_mm_st_dev",
@@ -446,9 +446,9 @@ table_s1_species_summary = (
         "chemical_defence_class": lambda x: "; ".join(sorted(set(x.dropna().astype(str)))),
         "unpalatability_ps_ed50": lambda x: "; ".join(sorted(set(x.dropna().astype(str)))),
         "unpalatability_tf_ed50": lambda x: "; ".join(sorted(set(x.dropna().astype(str)))),
-        "unpalatability_extra": lambda x: "; ".join(sorted(set(x.dropna().astype(str)))),
-        "toxicity_ed50": lambda x: "; ".join(sorted(set(x.dropna().astype(str)))),
-        "toxicity_extra": lambda x: "; ".join(sorted(set(x.dropna().astype(str)))),
+        "unpalatability_trf_ed50": lambda x: "; ".join(sorted(set(x.dropna().astype(str)))),
+        "toxicity_bs_ld50": lambda x: "; ".join(sorted(set(x.dropna().astype(str)))),
+        "toxicity_df_wm": lambda x: "; ".join(sorted(set(x.dropna().astype(str)))),
         "number_of_individuals": "sum",
         "collection_location": lambda x: "; ".join(sorted(set(x.dropna().astype(str)))),
         "coordinates": lambda x: "; ".join(sorted(set(x.dropna().astype(str))))
@@ -987,7 +987,7 @@ print(d03_d04_matched[[
     "species",
     "chemical_defence_class",
     "unpalatability_ps_ed50",
-    "toxicity_ed50",
+    "toxicity_bs_ld50",
     "d04_n_records",
     "d04_n_individuals",
     "d04_mean_col_mean",
@@ -2227,7 +2227,7 @@ possible_d03_columns = [
     "chemical_defence_class",
     "unpalatability_ps_ed50",
     "unpalatability_tf_ed50",
-    "toxicity_ed50"
+    "toxicity_bs_ld50"
 ]
 
 existing_d03_columns = [
