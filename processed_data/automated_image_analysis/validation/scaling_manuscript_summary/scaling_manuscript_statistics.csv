@@ -1,0 +1,13 @@
+﻿statistic,value,unit
+final_images,295.0,images
+species,30.0,species
+target_perimeter_exact,3629.34940969944,pixels
+target_perimeter_reported,3629.0,pixels
+images_above_target_downscaled,147.0,images
+images_at_or_below_target_unchanged,148.0,images
+images_strictly_below_target,147.0,images
+below_target_minimum_perimeter,725.2518680095673,pixels
+below_target_maximum_perimeter,3621.92509150505,pixels
+below_target_minimum_percent,19.98297177095517,percent of target
+below_target_maximum_percent,99.79543666491442,percent of target
+maximum_scale_factor,1.0,ratio

@@ -1,0 +1,6 @@
+assay,n_species_total,n_with_any_exact_numeric,n_exact_only,n_with_any_censoring,n_with_nr,n_inconclusive,n_missing,n_unparsed
+unpalatability_ps_ed50,30,16,14,7,7,0,2,0
+unpalatability_tf_ed50,30,5,5,5,5,0,15,0
+unpalatability_trf_ed50,30,8,7,3,3,0,17,0
+toxicity_bs_ld50,30,15,13,6,9,1,1,0
+toxicity_df_wm,30,4,4,0,0,0,26,0

@@ -1,0 +1,2 @@
+species,image_id,mask_source,animal_perimeter_before_scaling,target_animal_perimeter,scale_factor,animal_perimeter_after_scaling,ring_width_px,animal_area_pixels,background_ring_area_pixels
+Aphelodoris varia,Aphelodoris_varia_img03,automatic_qc_pass,4077.373794913292,3629.34940969944,0.8901193739527187,3612.3616021871567,120,571318,430166

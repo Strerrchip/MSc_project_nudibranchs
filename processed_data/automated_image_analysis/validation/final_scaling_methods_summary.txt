@@ -1,0 +1,18 @@
+Final scaling and segmentation summary
+======================================
+
+Initial images entering automatic processing: 296
+Final images retained: 295
+Species: 30
+
+Median target animal perimeter: 3629.35 px
+Images below the target perimeter: 147
+Images exactly equal to the target perimeter: 1
+Images at or below the target and not enlarged: 148
+Images above the target and downscaled: 147
+Images upscaled: 0
+
+Automatic QC passes: 227
+Images requiring rescue: 69
+Successful manual rescues: 68
+Images excluded after rescue: 1

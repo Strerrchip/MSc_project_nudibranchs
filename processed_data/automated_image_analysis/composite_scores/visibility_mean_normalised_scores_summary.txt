@@ -1,0 +1,16 @@
+Mean normalised visibility scores
+=================================
+
+Species: 30
+Images represented: 295
+Boldness metrics averaged: 6
+Detectability metrics averaged: 9
+
+Method:
+Each species-level metric was z-standardised across the 30 species using the sample standard deviation.
+All metrics were already oriented so that larger values represented greater boldness or detectability.
+The standardised metrics were averaged separately for boldness and detectability.
+The existing PCA outputs were not changed and remain available as secondary analyses.
+
+Mean normalised boldness range: -1.1710 to 0.8696
+Mean normalised detectability range: -1.1755 to 0.7323

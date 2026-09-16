@@ -1,18 +1,124 @@
-﻿__pycache__/
-*.pyc
+﻿# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
 
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files
+.vscode/
+.idea/
 .DS_Store
 Thumbs.db
 
+# Raw data, papers, private notes and manuscript drafts
 raw_data/
 papers/
+notes/
+writing/
 
+# Large intermediate image-analysis outputs
+processed_data/automated_image_analysis/background_rings/
+processed_data/automated_image_analysis/masks/
+processed_data/automated_image_analysis/scaled_images/
+processed_data/automated_image_analysis/qc_figures/
+processed_data/automated_image_analysis/qc_review/
+processed_data/automated_image_analysis/manual_rescue/masks_original_resolution/
+processed_data/automated_image_analysis/manual_rescue/qc/
+
+# Superseded pilot and exploratory outputs
+processed_data/archived_dataset_exploration/
+processed_data/archived_old_pilot/
+processed_data/image_analysis/
+processed_data/analysis/zero_defence_detectability/
+
+# Download/API audit files
+processed_data/analysis_preparation/*_api_audit.csv
+
+# Model weights
+*.pt
+*.pth
+*.onnx
+
+# Documents, archives and temporary files
+*.doc
+*.docx
+*.zip
 *.tmp
 *.bak
-~$*.xlsx
+*.log
+*.aux
+*.out
+*.toc
+*.synctex.gz
+~$*
 
-.vscode/
+# Temporary repository-audit files
+/project_structure_current.txt
+/git_tracked_files_current.txt
+/git_status_current.txt
+/gitignore_current.txt
+/scripts_current.txt
+/scripts_current*.zip
 
-# Model files
-mobile_sam.pt
-*.pt
+# Local archive retained on this computer only
+local_archive/
+
+# Superseded preparation files and working backups
+processed_data/analysis_preparation/
+processed_data/image_candidate_search/
+processed_data/**/*_before_*
+processed_data/**/*_preview.*
+
+# Superseded pilot outputs
+processed_data/automated_image_analysis/**/*_pilot.*
+processed_data/automated_image_analysis/validation/sam_scaled_ring120_formal_current5_summary.csv
+
+# Superseded composite-score figures
+processed_data/analysis/continuous_defence_results/mean_normalised_scores/
+processed_data/analysis/continuous_defence_results/scatterplots/mean_normalised_scores_vs_defence_2x2_final.*
+
+# Temporary inventories created during this cleanup
+/project_folders.txt
+/project_tree.txt
+/van_file_list.txt
+# Local archive retained on this computer only
+local_archive/
+
+# Superseded preparation files and working backups
+processed_data/analysis_preparation/
+processed_data/image_candidate_search/
+processed_data/**/*_before_*
+processed_data/**/*_preview.*
+
+# Superseded pilot outputs
+processed_data/automated_image_analysis/**/*_pilot.*
+processed_data/automated_image_analysis/validation/sam_scaled_ring120_formal_current5_summary.csv
+
+# Superseded composite-score figures
+processed_data/analysis/continuous_defence_results/mean_normalised_scores/
+processed_data/analysis/continuous_defence_results/scatterplots/mean_normalised_scores_vs_defence_2x2_final.*
+
+# Temporary inventories created during this cleanup
+/project_folders.txt
+/project_tree.txt
+/van_file_list.txt
+
+# Figures containing third-party iNaturalist photographs
+processed_data/analysis/toxicity_boldness_residuals/toxicity_boldness_residual_collage.png
+processed_data/automated_image_analysis/methods_figures/segmentation_methods_2x2.png
+
+Add-Content -Path ".gitignore" -Encoding utf8 -Value @(
+    "processed_data/analysis/toxicity_boldness_residuals/toxicity_boldness_residual_collage.pdf"
+    "processed_data/automated_image_analysis/methods_figures/segmentation_methods_2x2.pdf"
+)processed_data/analysis/toxicity_boldness_residuals/toxicity_boldness_residual_collage.pdf
+processed_data/automated_image_analysis/methods_figures/segmentation_methods_2x2.pdf
+processed_data/analysis/toxicity_boldness_residuals/toxicity_boldness_residual_collage.pdf

@@ -1,3 +1,0 @@
-species,n_images,mean_brightness_contrast,sd_brightness_contrast,mean_saturation_contrast,sd_saturation_contrast,mean_lab_colour_distance,sd_lab_colour_distance,mean_animal_brightness_sd,sd_animal_brightness_sd,mean_animal_saturation_sd,sd_animal_saturation_sd,mean_animal_area_pixels,mean_background_ring_area_pixels
-Aphelodoris varia,2,75.58,16.482,-50.743,6.978,72.859,20.69,48.332,7.234,50.762,2.221,221235.5,186143.0
-Doriprismatica atromarginata,3,88.813,10.8,-89.855,9.993,98.416,12.253,54.726,10.295,60.989,25.499,122331.667,166338.667

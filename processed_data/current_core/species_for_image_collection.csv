@@ -1,9 +1,9 @@
-﻿species,family,chemical_defence_class,unpalatability_ps_ed50,unpalatability_tf_ed50,toxicity_ed50,image_collection_priority,image_search_status,n_images_found,n_usable_images,image_sources_checked,image_collection_notes
-Aphelodoris varia,Dorididae,NR; WR/NR,nr,,nr,pilot,not_started,0,0,,
-Doriprismatica atromarginata,Chromodorididae,I&II,0.15; 0.37,0.07,0.07,pilot,not_started,0,0,,
-Hypselodoris bennetti,Chromodorididae,I&II,0.27,,0.12,pilot,not_started,0,0,,
-Phyllidia ocellata,Phyllidiidae,II,0.37,,0.6,pilot,not_started,0,0,,
-Phyllidiella pustulosa,Phyllidiidae,I&II; II/WR,0.05; 0.12; 0.2,0.72,0.27; 0.61; 0.85,pilot,not_started,0,0,,
+species,family,chemical_defence_class,unpalatability_ps_ed50,unpalatability_tf_ed50,toxicity_bs_ld50,image_collection_priority,image_search_status,n_images_found,n_usable_images,image_sources_checked,image_collection_notes
+Aphelodoris varia,Dorididae,NR; WR/NR,nr,,nr,pilot,needs_more_images,10,8,iNaturalist,10 candidates reviewed; 8 currently usable; 2 downloaded; 2 segmented; 2 excluded because of licence.
+Doriprismatica atromarginata,Chromodorididae,I&II,0.15; 0.37,0.07,0.07,pilot,needs_more_images,10,9,iNaturalist,10 candidates reviewed; 9 currently usable; 3 downloaded; 3 segmented; 1 excluded because of licence.
+Hypselodoris bennetti,Chromodorididae,I&II,0.27,,0.12,pilot,candidate_target_met,10,10,iNaturalist,10 candidates reviewed; 10 currently usable; 0 downloaded; 0 segmented.
+Phyllidia ocellata,Phyllidiidae,II,0.37,,0.6,pilot,candidate_target_met,10,10,iNaturalist,10 candidates reviewed; 10 currently usable; 0 downloaded; 0 segmented.
+Phyllidiella pustulosa,Phyllidiidae,I&II; II/WR,0.05; 0.12; 0.2,0.72,0.27; 0.61; 0.85,pilot,candidate_target_met,10,10,iNaturalist,10 candidates reviewed; 10 currently usable; 0 downloaded; 0 segmented.
 Ardeadoris egretta,Chromodorididae,WR,0.65; > 1,> 1,> 1,full_list,not_started,0,0,,
 Ardeadoris rubroannulata,Chromodorididae,I&II,0.083,,0.0007,full_list,not_started,0,0,,
 Ceratosoma brevicaudatum,Chromodorididae,WR,>1,>1,0.72,full_list,not_started,0,0,,
