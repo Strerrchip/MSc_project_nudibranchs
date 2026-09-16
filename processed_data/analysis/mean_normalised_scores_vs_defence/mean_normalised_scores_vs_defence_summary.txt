@@ -1,0 +1,11 @@
+Mean normalised scores versus defence
+=======================================
+
+panel                            title            defence_variable                  visual_score  n_species  pearson_r  pearson_p  pearson_r_squared  spearman_rho  spearman_p  linear_slope  linear_intercept  pearson_q_bh_4_tests  spearman_q_bh_4_tests  significant_after_bh
+    A      Unpalatability and boldness unpalatability_strength_0_1      mean_normalised_boldness         26   0.369310   0.063345           0.136390      0.390068    0.048841      0.428578         -0.145407              0.103805               0.072585                 False
+    B Unpalatability and detectability unpalatability_strength_0_1 mean_normalised_detectability         26   0.119693   0.560297           0.014326      0.104895    0.610074      0.142120         -0.065876              0.560297               0.610074                 False
+    C            Toxicity and boldness       toxicity_strength_0_1      mean_normalised_boldness         27   0.572725   0.001795           0.328014      0.567887    0.002003      0.806912         -0.221455              0.007182               0.008011                  True
+    D       Toxicity and detectability       toxicity_strength_0_1 mean_normalised_detectability         27   0.345159   0.077854           0.119135      0.374274    0.054439      0.476133         -0.170177              0.103805               0.072585                 False
+
+Panels significant after BH correction: C
+Grey panel grids were removed from the final figure.

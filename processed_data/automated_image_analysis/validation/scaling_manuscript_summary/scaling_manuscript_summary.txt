@@ -1,0 +1,7 @@
+Final scaling summary for the manuscript
+==========================================
+
+The rounded median scaling target was 3,629 pixels.
+Of 295 retained images, 147 animals above the target were downscaled and 148 images at or below the target were retained at their original resolution.
+The 147 strictly below-target animal perimeters ranged from 725 to 3,622 pixels (20.0-99.8% of the target).
+No image was enlarged (maximum scale factor = 1.000).

@@ -1,0 +1,21 @@
+Van background external comparison
+==================================
+
+Overlapping species: 9
+Viewing distances: 2 cm and 30 cm
+Metric pairs: 4
+Total comparisons: 8
+
+Statistical approach:
+Pearson and Spearman correlations were calculated using species-level z-scores.
+Benjamini-Hochberg correction was applied across the eight comparisons separately for Pearson and Spearman tests.
+
+Important interpretation:
+The paired metrics are conceptually related but not mathematically identical.
+The online-image metrics use uncalibrated photographs and CIELAB edge approximations.
+The van den Berg metrics use calibrated photographs, triggerfish vision and QCPA.
+
+Largest absolute Spearman association:
+luminance_edge_cv at 30 cm: rho = 0.750, raw p = 0.0199, BH q = 0.1595
+
+Spearman comparisons with BH q < 0.05: 0

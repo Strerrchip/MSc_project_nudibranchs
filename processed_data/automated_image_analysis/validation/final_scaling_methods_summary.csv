@@ -1,0 +1,2 @@
+﻿initial_images_processed,final_images,species,target_median_perimeter_px,images_below_target,images_equal_to_target,images_at_or_below_target_not_enlarged,images_above_target_downscaled,images_with_scale_factor_1,images_with_scale_factor_below_1,images_with_scale_factor_above_1,automatic_qc_pass,images_requiring_rescue,successful_manual_rescue,excluded_after_rescue
+296,295,30,3629.34940969944,147,1,148,147,148,147,0,227,69,68,1

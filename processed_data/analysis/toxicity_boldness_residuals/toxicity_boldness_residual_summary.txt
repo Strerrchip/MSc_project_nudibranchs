@@ -1,0 +1,16 @@
+Toxicity-boldness residual audit
+=================================
+
+Species included in panel C: 27
+OLS equation: boldness = -0.221455 + 0.806912 * toxicity
+Formal residual rule: absolute internally studentised residual > 2.
+Number of formal residual outliers: 1
+
+Formal residual outliers:
+- Dendrodoris nigra: studentised residual = -2.222
+
+Four species selected for the image collage:
+- rank 1: Dendrodoris nigra; toxicity = 0.000; boldness = -1.171; studentised residual = -2.222; Cook's distance = 0.158
+- rank 2: Notodoris (=Aegires) gardineri; toxicity = 0.000; boldness = 0.451; studentised residual = 1.573; Cook's distance = 0.079
+- rank 3: Phyllidia varicosa; toxicity = 0.525; boldness = 0.870; studentised residual = 1.555; Cook's distance = 0.066
+- rank 4: Phyllidiella pustulosa; toxicity = 0.423; boldness = -0.503; studentised residual = -1.445; Cook's distance = 0.046

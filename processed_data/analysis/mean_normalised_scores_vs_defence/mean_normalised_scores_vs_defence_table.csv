@@ -1,0 +1,31 @@
+﻿species,unpalatability_ps_ed50,toxicity_bs_ld50,unpalatability_strength_0_1,unpalatability_strength_0_1_status,toxicity_strength_0_1,toxicity_strength_0_1_status,n_images,mean_normalised_boldness,mean_normalised_detectability
+Aphelodoris varia,nr,nr,0.0,resolved,0.0,resolved,8,0.036554825005218,-0.5384798485487554
+Ardeadoris egretta,0.65; > 1,> 1,0.175,resolved,0.0,resolved,10,-0.1950433532135423,0.6902340482316327
+Ardeadoris rubroannulata,0.083,0.0007,0.917,resolved,0.9993,resolved,10,0.4699273658371867,0.3619577330164455
+Ceratosoma brevicaudatum,>1,0.72,0.0,resolved,0.28,resolved,10,-0.2519361158422393,-0.0953878913673839
+Ceratosoma trilobatum,>1,0.68,0.0,resolved,0.31999999999999995,resolved,10,-0.3233338335450394,-0.0247319381721865
+Chromodoris elisabethina,0.45; > 0.13,0.004,,censored_excluded,0.996,resolved,10,0.8114795298585115,0.2282057547030483
+Chromodoris kuiteri,0.26,0.002,0.74,resolved,0.998,resolved,10,0.7805496194667046,0.1325575685764583
+Dendrodoris krusensternii (=denisoni),,nr,,missing,0.0,resolved,10,-0.5317437616690528,-1.030026993666728
+Dendrodoris nigra,,> 1,,missing,0.0,resolved,10,-1.1710094943162106,0.2234531281375307
+Dendrodoris tuberculosa,nr,nr,0.0,resolved,0.0,resolved,10,-0.7724246584495363,-1.175530723798988
+Doriprismatica atromarginata,0.15; 0.37,0.07,0.74,resolved,0.9299999999999999,resolved,9,0.4693993794010805,0.6788999075319485
+Glossodoris hikuerensis,nr,nr,0.0,resolved,0.0,resolved,10,-0.1261871900051629,0.1170186405458987
+Goniobranchus collingwoodi,0.09,nr,0.91,resolved,0.0,resolved,10,0.0333395028257726,-0.1808450079124451
+Goniobranchus daphne,0.43,> 0.5,0.5700000000000001,resolved,,censored_excluded,10,-0.2678127416316523,0.1658102715686019
+Goniobranchus splendidus,0.18; 0.25,0.52; nr,0.785,resolved,0.24,resolved,10,0.4797844826183865,0.2712911521489551
+Goniobranchus tasmaniensis,< 0.25,0.86,,censored_excluded,0.14,resolved,10,-0.0290832367900421,0.7322725746017528
+Goniobranchus tinctorius,0.15,0.86; nr,0.85,resolved,0.07,resolved,9,0.0700350853270281,-0.1618933008611885
+Halgerda aurantiomaculata,nr,nr,0.0,resolved,0.0,resolved,10,0.2103460785506353,0.166495819932612
+Hypselodoris bennetti,0.27,0.12,0.73,resolved,0.88,resolved,10,0.0932522667882975,0.0872616616166198
+Hypselodoris obscura,>1,0.35,0.0,resolved,0.65,resolved,10,-0.0093042361807139,-0.309299786095659
+Hypselodoris tryoni,nr,NA (inconclusive),0.0,resolved,,inconclusive,10,0.3535551789526836,0.2976731763287412
+Mexichromis festiva,>1,,0.0,resolved,,missing,10,-0.4420354913029099,0.3928857514401963
+Notodoris (=Aegires) gardineri,nr,1.02,0.0,resolved,0.0,resolved,10,0.4507149358804973,0.6627639493034881
+Phyllidia coelestis,0.31; 0.54,>1 (1.41),0.575,resolved,0.0,resolved,10,0.3183353965221657,-0.3036478403841176
+Phyllidia elegans,0.31,>1,0.69,resolved,0.0,resolved,10,-0.643747167044524,-0.5462497343707349
+Phyllidia ocellata,0.37,0.6,0.63,resolved,0.4,resolved,10,0.7207091348959104,0.4498142314886373
+Phyllidia varicosa,0.02; 0.1; 0.12,0.22; 0.73,0.9199999999999999,resolved,0.525,resolved,10,0.869643049680123,0.3354786487941867
+Phyllidiella pustulosa,0.05; 0.12; 0.2,0.27; 0.61; 0.85,0.8766666666666666,resolved,0.42333333333333334,resolved,10,-0.5033557330382129,-0.5212679361900054
+Phyllidiopsis shireenae,0.14,>1,0.86,resolved,0.0,resolved,10,-0.2164636443411216,-0.2479453585729808
+Sebadoris fragilis,nr,nr,0.0,resolved,0.0,resolved,9,-0.6841451742402492,-0.8587676580255824
